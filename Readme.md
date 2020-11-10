@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина Ульянова](https://up.htmlacademy.ru/adaptive/21/user/925273).
-* Наставник: `Неизвестно`.
+* Наставник: `Арсений Березин`.
 
 ---
 
