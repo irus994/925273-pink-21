@@ -23,7 +23,7 @@
         <h1 class="visually-hidden">Приложение PINK</h1>
         <p class="download__header">Взгляните на жизнь иначе!</p>
         <button class="download-button">
-          <p class="download-button__text">Скачать приложение</p>
+          Скачать приложение
         </button>
         <ul class="download__systems-list">
           <li class="download__systems-item"><a class="download__systems-link" href="#">iOS</a></li>
@@ -34,14 +34,22 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения PINK</h2>
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
-        <h3 class="advantages__header">Поднимает настроение</h3>
-        <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <h3 class="advantages__header">Меняет мир вокруг</h3>
-        <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <h3 class="advantages__header">Заводит новых друзей</h3>
-        <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <p class="advantages__tagline">Устали от серости мегаполиса?</p>
+        <p class="advantages__tagline">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__header"> Поднимает настроение</h3>
+            <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__header">Меняет мир вокруг</h3>
+            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__header">Заводит новых друзей</h3>
+            <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
         <img src="#" alt="Приветствие PINK на экране телефона">
       </section>
       <section class="reviews">
@@ -53,24 +61,28 @@
       </section>
       <section class="offers">
         <h2 class="visually-hidden">Предложения</h2>
-        <dl class="offers__list">
-          <dt class="offers__title"><p class="offers__text--title">База</p><span class="offers__price">1,99 USD</span></dt>
-          <dd class="offers__description"><p class="offers__text--description">Розовый фильтр</p></dd>
-          <dd class="offers__description"><p class="offers__text--description">Смайлики</p></dd>
-          <dd class="offers__description"><p class="offers__text--description">Комментарии</p></dd>
-        </dl>
-        <dl class="offers__list">
-          <dt class="offers__title offers__hit"><p class="offers__text--title">Стандарт</p><span class="offers__price">3,99 USD</span></dt>
-          <dd class="offers__description"><p class="offers__text--description">Розовый фильтр</p></dd>
-          <dd class="offers__description"><p class="offers__text--description">Смайлики</p></dd>
-          <dd class="offers__description"><p class="offers__text--description">Комментарии</p></dd>
-        </dl>
-        <dl class="offers__list">
-          <dt class="offers__title"><p class="offers__text--title">Анлим</p><span class="offers__price">9,99 USD</span></dt>
-          <dd class="offers__description"><p class="offers__text--description">Розовый фильтр</p></dd>
-          <dd class="offers__description"><p class="offers__text--description">Смайлики</p></dd>
-          <dd class="offers__description"><p class="offers__text--description">Комментарии</p></dd>
-        </dl>
+        <table class="offers__table">
+          <tr class="offers__table-tr">
+            <th class="offers__table-th"><p class="offers__text--title">База</p><span class="offers__price">1,99 USD</span></th>
+            <th class="offers__table-th"><p class="offers__text--title">Стандарт</p><span class="offers__price">3,99 USD</span></th>
+            <th class="offers__table-th"><p class="offers__text--title">Анлим</p><span class="offers__price">9,99 USD</span></th>
+          </tr>
+          <tr class="offers__table-tr">
+            <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
+            <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
+            <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
+          </tr>
+          <tr class="offers__table-tr">
+            <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
+            <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
+            <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
+          </tr>
+          <tr class="offers__table-tr">
+            <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
+            <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
+            <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
+          </tr>
+        </table>
       </section>
       <section class="contact">
         <h2 class="contact__header">Остались вопросы? Свяжитесь с нами!</h2>
