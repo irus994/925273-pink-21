@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма отправки</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="#" alt="Логотип приложения PINK">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="form-header">
+      <h1 class="form-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
+    <section class="preview-text">
+      <p class="preview-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    </section>
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <label class="name-form__label" for="user-surname"> Фамилия:</label>
+      <input class="name-form__input" type="text" name="surname" id="user-surname" placeholder="Укажите фамилию *">
+      <label class="name-form__label" for="user-name"> Имя:</label>
+      <input class="name-form__input" type="text" name="name" id="user-name" placeholder="Введите ваше имя *">
+      <label class="name-form__label" for="user-patronymic"> Отчество:</label>
+      <input class="name-form__input" type="text" name="patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
+      <br>
+      <p class="achievements-form__header">Ваши безбашенные приключения</p>
+      <input class="achievements-form__input" type="checkbox" checked name="selfie-shark" id="selfie">
+      <label class="achievements-form__label" for="selfie">Сделал селфи с акулой</label>
+      <input class="achievements-form__input" type="checkbox" checked name="burned-beach" id="beach">
+      <label class="achievements-form__label" for="beach">Обгорел на пляже</label>
+      <input class="achievements-form__input" type="checkbox" name="saw-сhuck-norris" id="сhuck-norris">
+      <label class="achievements-form__label" for="сhuck-norris">Видел Чака Норриса</label>
+      <input class="achievements-form__input" type="checkbox" name="buy-souvenirs" id="souvenirs">
+      <label class="achievements-form__label" for="souvenirs">Накупил сувениров</label>
+      <input class="achievements-form__input" type="checkbox" name="keep-tower" id="tower">
+      <label class="achievements-form__label" for="tower">Удержал башню</label>
+      <input class="achievements-form__input" type="checkbox" checked name="smash-hotel" id="hotel">
+      <label class="achievements-form__label" for="hotel">Разгромил отель</label>
+      <br>
+      <label class="contact-form__label" for="number">Номер телефона:</label>
+      <input class="contact-form__input" type="tel" name="phone-number" id="number" placeholder="Номер, пожалуйста">
+      <label class="contact-form__label" for="email">Адрес почты</label>
+      <input class="contact-form__input" type="email" name="email-address" id="email" placeholder="Введите почту *">
+      <br>
+      <p class="attachment-form__header">C каким приложением путешествовали</p>
+      <input class="attachment-form__input" type="radio" name="attachment" checked value="pink-ios" id="pink-ios">
+      <label class="attachment-form__label" for="pink-ios">Pink для iOS</label>
+      <input class="attachment-form__input" type="radio" name="attachment" value="pink-android" id="pink-android">
+      <label class="attachment-form__label" for="pink-android">Pink на Android</label>
+      <input class="attachment-form__input" type="radio" name="attachment" value="windows-phone" id="windows-phone">
+      <label class="attachment-form__label" for="windows-phone"> Windows Phone</label>
+      <br>
+      <label class="emotion-form__label" for="user-comment">Опишите свои эмоции</label>
+      <textarea class="emotion-form__textarea" name="comment" id="user-comment">Можно прям в красках, не
+      стесняясь в выражениях</textarea>
+      <button type="submit">Отправить форму</button>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img src="#" alt="Логотип приложения PINK">
+    </a>
+    <ul class="social-button">
+      <li class="social-button__item"><a class="social-button__link" href="#">Twitter</a></li>
+      <li class="social-button__item"><a class="social-button__link" href="#">Facebook</a></li>
+      <li class="social-button__item"><a class="social-button__link" href="#">YouTube</a></li>
+    </ul>
+    <span class="developed">Разработано</span>
+    <a class="developed__image" href="#"><img src="#" alt="Разработано HTML Academy"></a>
+  </footer>
+</body>
+</html>
