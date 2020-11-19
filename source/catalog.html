@@ -1,10 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Каталог приложения PINK</title>
 </head>
-<body>
-$END$
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="#" alt="Логотип приложения PINK">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header class="catalog-header">
+    <h1 class="catalog-header__header">Фотографии пользователей</h1>
+  </header>
+  <main class="catalog">
+    <div class="catalog__preview-text">
+      <p class="catalog__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
+      <p class="catalog__text">Видите, как не хватает ваших?</p>
+    </div>
+    <article class="catalog__item">
+      <img src="#" alt="Фото пользователя">
+      <span class="catalog__user">Анна</span> <span class="catalog__user-time">5 минут назад</span>
+      <p class="catalog__user-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+      <span class="catalog__user-like">Нравится: 215</span>
+    </article>
+    <article class="catalog__item">
+      <img src="#" alt="Фото пользователя">
+      <span class="catalog__user">Левон</span> <span class="catalog__user-time">5 часов назад</span>
+      <p class="catalog__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+      <span class="catalog__user-like">Нравится: 356</span>
+    </article>
+    <article class="catalog__item">
+      <img src="#" alt="Фото пользователя">
+      <span class="catalog__user">Антон</span> <span class="catalog__user-time">12 часов назад</span>
+      <p class="catalog__user-text">Соседи будут рады!</p>
+      <span class="catalog__user-like">Нравится: 666</span>
+    </article>
+    <article class="catalog__item">
+      <img src="#" alt="Фото пользователя">
+      <span class="catalog__user">Борис</span> <span class="catalog__user-time">20 часов назад</span>
+      <p class="catalog__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+      <span class="catalog__user-like">Нравится: 215</span>
+    </article>
+    <article class="catalog__item">
+      <img src="#" alt="Фото пользователя">
+      <span class="catalog__user">Сергей</span> <span class="catalog__user-time">25 часов назад</span>
+      <p class="catalog__user-text">Самая кубанская в мире!</p>
+      <span class="catalog__user-like">Нравится: 4</span>
+    </article>
+    <article class="catalog__item">
+      <img src="#" alt="Фото пользователя">
+      <span class="catalog__user">Максим</span> <span class="catalog__user-time">40 часов назад</span>
+      <p class="catalog__user-text">Где снег-то?</p>
+      <span class="catalog__user-like">Нравится: 150</span>
+    </article>
+    <article class="catalog__item">
+      <img src="#" alt="Фото пользователя">
+      <span class="catalog__user">Надежда</span> <span class="catalog__user-time">45 часов назад</span>
+      <p class="catalog__user-text">Всем GM и взаимные лайки!</p>
+      <span class="catalog__user-like">Нравится: 2560</span>
+    </article>
+    <div class="catalog__conclusion">
+      <p class="catalog__conclusion-text">Затмите их всех!</p>
+      <p class="catalog__conclusion-text">Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
+    <form class="catalog-form" action="https://echo.htmlacademy.ru" method="POST">
+      <input type="file" id="photo" name="user-photo">
+      <label class="visually-hidden" for="photo">Загрузка картинки</label>
+      <ul class="catalog-form__tools">
+        <li class="catalog-form__tools-item">Кадрирование</li>
+        <li class="catalog-form__tools-item">Заливка</li>
+        <li class="catalog-form__tools-item">Контраст</li>
+      </ul>
+      <button class="catalog-form__button--post">Запостить</button>
+      <button class="catalog-form__button--cancel">Отмена</button>
+      <input class="catalog-form__range" type="range" name="form-range" id="range">
+      <label class="visually-hidden" for="range">Выбрать</label>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo">
+      <img src="#" alt="Логотип приложения PINK">
+    </a>
+    <ul class="social-button">
+      <li class="social-button__item"><a class="social-button__link" href="#">Twitter</a></li>
+      <li class="social-button__item"><a class="social-button__link" href="#">Facebook</a></li>
+      <li class="social-button__item"><a class="social-button__link" href="#">YouTube</a></li>
+    </ul>
+    <span class="developed">Разработано</span>
+    <a class="developed__image" href="#"><img src="#" alt="Разработано HTML Academy"></a>
+  </footer>
 </body>
 </html>
