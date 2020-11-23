@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="" alt="Логотип приложения PINK">
+        <img src="img/pink.png" alt="Логотип приложения PINK">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -19,18 +20,18 @@
       </nav>
     </header>
     <main class="main">
-      <section class="download">
+      <section class="download-block">
         <h1 class="visually-hidden">Приложение PINK</h1>
-        <p class="download__header">Взгляните на жизнь иначе!</p>
+        <p class="download-block__header">Взгляните на жизнь иначе!</p>
         <button class="download-button">
           Скачать приложение
         </button>
-        <ul class="download__systems-list">
-          <li class="download__systems-item"><a class="download__systems-link" href="#">iOS</a></li>
-          <li class="download__systems-item"><a class="download__systems-link" href="#">Android</a></li>
-          <li class="download__systems-item"><a class="download__systems-link" href="#">Windows</a></li>
+        <ul class="download-block__systems-list">
+          <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--ios" href="#"><span class="visually-hidden">iOS</span></a></li>
+          <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--android" href="#"><span class="visually-hidden">Android</span></a></li>
+          <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--windows" href="#"><span class="visually-hidden">Windows</span></a></li>
         </ul>
-        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения PINK</h2>
@@ -99,16 +100,15 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img src="#" alt="Логотип приложения PINK">
+        <img src="img/logotype-blue-tablet.png" alt="Логотип приложения PINK">
       </a>
       <ul class="social-button">
-        <li class="social-button__item"><a class="social-button__link" href="#">Twitter</a></li>
-        <li class="social-button__item"><a class="social-button__link" href="#">Facebook</a></li>
-        <li class="social-button__item"><a class="social-button__link" href="#">YouTube</a></li>
+        <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
       </ul>
       <span class="developed">Разработано</span>
-      <a class="developed__image" href="#"><img src="#" alt="Разработано HTML Academy"></a>
+      <a class="developed__image" href="#"><img src="img/html%20academy.png" alt="Разработано HTML Academy"></a>
     </footer>
   </body>
 </html>
-

@@ -1,0 +1,40 @@
+
+.download-block {
+  background-color: #1d2631;
+}
+
+.download-block__header {
+  color: #ffffff;
+}
+
+.download-block__systems-list {
+  list-style: none;
+  display: flex;
+}
+
+.download-block__systems-item {
+
+}
+
+.download-block__systems-link {
+  display: block;
+  width: 47px;
+  height: 56px;
+
+    &--ios {
+      background: url("../img/apple-logo.png") no-repeat;
+    }
+
+    &--android {
+      background: url("../img/android-logo.png") no-repeat;
+    }
+
+    &--windows {
+      background: url("../img/microsoft-logo.png") no-repeat;
+    }
+}
+
+.download-block__text {
+  color: #ffffff;
+}
+
