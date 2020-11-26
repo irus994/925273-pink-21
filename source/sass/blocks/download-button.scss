@@ -1,3 +1,22 @@
 .download-button {
+  width: 280px;
+  height: 55px;
+  border: 3px #ffffff solid;
+  border-radius: 29px;
+  background-color: #1d2631;
+  color: #ffffff;
 
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+}
+
+.download-button__wrapper {
+  background-color: #1d2631;
+  padding: 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }

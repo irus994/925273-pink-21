@@ -1,6 +1,13 @@
-
+$desktop-width: 1200px;
 .page-header {
   background-color: #1d2631;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 130px;
+  }
 }
 .page-header__logo {
 

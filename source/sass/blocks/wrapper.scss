@@ -1,0 +1,29 @@
+$tablet-width: 660px;
+
+.wrapper__download-block {
+  text-align: center;
+}
+
+.wrapper__developed {
+
+}
+
+.wrapper__contact {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.wrapper__tel {
+
+}
+
+.wrapper__mail {
+
+}
+
+.wrapper__address {
+
+}

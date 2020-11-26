@@ -1,0 +1,17 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+.hours-24 {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.hours-24__image {
+
+}
