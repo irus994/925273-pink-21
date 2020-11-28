@@ -2,16 +2,18 @@ $tablet-width: 660px;
 $desktop-width: 1200px;
 
 .advantages {
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column-reverse;
+    text-align: center;
   }
-
 }
 
 .advantages__tagline {

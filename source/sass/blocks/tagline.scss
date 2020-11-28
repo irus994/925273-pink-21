@@ -1,5 +1,23 @@
-.tagline {
+$tablet-width: 660px;
+$desktop-width: 1200px;
 
+.tagline {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 210px;
+    padding-right: 210px;
+    font-size: 50px;
+  }
 }
 
 .tagline__text {
