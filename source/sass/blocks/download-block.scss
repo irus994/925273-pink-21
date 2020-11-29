@@ -1,15 +1,37 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
 
 .download-block {
-  background-color: #1d2631;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 729px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .download-block__header {
   color: #ffffff;
+  font-size: 40px;
+  margin: 0;
 }
 
 .download-block__systems-list {
   list-style: none;
   display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: #1d2631;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .download-block__systems-item {
@@ -36,5 +58,10 @@
 
 .download-block__text {
   color: #ffffff;
-}
+  margin: 0;
+  background-color: #1d2631;
 
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+}

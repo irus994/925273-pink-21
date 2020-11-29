@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="/css/style.css">
   </head>
@@ -20,83 +21,133 @@
       </nav>
     </header>
     <main class="main">
-      <section class="download-block">
-        <h1 class="visually-hidden">Приложение PINK</h1>
-        <p class="download-block__header">Взгляните на жизнь иначе!</p>
-        <button class="download-button">
-          Скачать приложение
-        </button>
-        <ul class="download-block__systems-list">
-          <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--ios" href="#"><span class="visually-hidden">iOS</span></a></li>
-          <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--android" href="#"><span class="visually-hidden">Android</span></a></li>
-          <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--windows" href="#"><span class="visually-hidden">Windows</span></a></li>
-        </ul>
-        <p class="download-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества приложения PINK</h2>
-        <p class="advantages__tagline">Устали от серости мегаполиса?</p>
-        <p class="advantages__tagline">Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__header"> Поднимает настроение</h3>
-            <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__header">Меняет мир вокруг</h3>
-            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__header">Заводит новых друзей</h3>
-            <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img src="#" alt="Приветствие PINK на экране телефона">
-      </section>
-      <section class="reviews">
-        <h2 class="visually-hidden">Отзывы пользователей</h2>
-        <ul class="reviews__slider">
-          <li class="reviews__item">
-          <p class="reviews__name">Николай Петров</p>
-          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </li>
-        </ul>
-      </section>
-      <section class="offers">
-        <h2 class="visually-hidden">Предложения</h2>
-        <table class="offers__table">
-          <tr class="offers__table-tr">
-            <th class="offers__table-th"><p class="offers__text--title">База</p><span class="offers__price">1,99 USD</span></th>
-            <th class="offers__table-th"><p class="offers__text--title">Стандарт</p><span class="offers__price">3,99 USD</span></th>
-            <th class="offers__table-th"><p class="offers__text--title">Анлим</p><span class="offers__price">9,99 USD</span></th>
-          </tr>
-          <tr class="offers__table-tr">
-            <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
-            <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
-            <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
-          </tr>
-          <tr class="offers__table-tr">
-            <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
-            <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
-            <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
-          </tr>
-          <tr class="offers__table-tr">
-            <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
-            <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
-            <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
-          </tr>
-        </table>
-      </section>
-      <section class="contact">
-        <h2 class="contact__header">Остались вопросы? Свяжитесь с нами!</h2>
-        <p class="contact__text">Звоните:</p>
-        <p class="contact__tel"><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
-        <p class="contact__text">Пишите:</p>
-        <p class="contact__mail"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p class="contact__text">Приезжайте в гости:</p>
-        <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
-        <div class="map"></div>
-      </section>
+      <div class="wrapper__download-block">
+        <section class="download-block">
+          <div class="wrapper__column-left">
+            <div class="wrapper__download-header">
+              <p class="download-block__header">Взгляните на жизнь иначе!</p>
+            </div>
+            <h1 class="visually-hidden">Приложение PINK</h1>
+            <div class="download-button__wrapper">
+              <button class="download-button">
+                Скачать приложение
+              </button>
+            </div>
+            <ul class="download-block__systems-list">
+              <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--ios" href="#"><span class="visually-hidden">iOS</span></a></li>
+              <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--android" href="#"><span class="visually-hidden">Android</span></a></li>
+              <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--windows" href="#"><span class="visually-hidden">Windows</span></a></li>
+            </ul>
+            <p class="download-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </section>
+      </div>
+      <div class="wrapper__main">
+        <section class="tagline">
+          <p class="tagline__text">Устали от серости мегаполиса?</p>
+          <p class="tagline__text">Нам есть, что вам предложить!</p>
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества приложения PINK</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__header"> Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__header">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__header">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <ul class="advantages__picture-list">
+            <li class="advantages__picture-item advantages__picture-item--desktop-only">
+              <picture class="advantages__image">
+                <img src="img/screen-1.png" alt="Приветствие PINK на экране телефона">
+              </picture>
+            </li>
+            <li class="advantages__picture-item advantages__picture-item--desktop-only">
+              <picture class="advantages__image">
+                <img src="img/screen-2.png" alt="Приветствие PINK на экране телефона">
+              </picture>
+            </li>
+            <li class="advantages__picture-item">
+              <picture class="advantages__image">
+                <source srcset="img/iphone-tablet.png" media="(min-width: 660px ) and (max-width: 1199px)">
+                <source srcset="img/screen-3.png" media="(min-width: 1200px)">
+                <img src="img/iphone-mobile.png" alt="Приветствие PINK на экране телефона">
+              </picture>
+            </li>
+          </ul>
+        </section>
+        <section class="hours-24">
+          <picture class="hours-24__image">
+            <source srcset="img/timer-desktop.png" media="(min-width: 1200px)">
+            <img src="img/timer-tablet.png" alt="таймер 24 часа">
+          </picture>
+          <div class="wrapper__hours-24">
+            <h2 class="hours-24__header">Эффект на 24 часа!</h2>
+            <p class="hours-24__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="hours-24__text">Узнать больше об исследовании</a>
+          </div>
+        </section>
+        <section class="reviews">
+          <h2 class="visually-hidden">Отзывы пользователей</h2>
+          <ul class="reviews__slider">
+            <li class="reviews__item">
+            <p class="reviews__name">Николай Петров</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+          </ul>
+        </section>
+        <section class="offers">
+          <h2 class="visually-hidden">Предложения</h2>
+          <table class="offers__table">
+            <tr class="offers__table-tr">
+              <th class="offers__table-th"><p class="offers__text--title">База</p><span class="offers__price">1,99 USD</span></th>
+              <th class="offers__table-th"><p class="offers__text--title">Стандарт</p><span class="offers__price">3,99 USD</span></th>
+              <th class="offers__table-th"><p class="offers__text--title">Анлим</p><span class="offers__price">9,99 USD</span></th>
+            </tr>
+            <tr class="offers__table-tr">
+              <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
+              <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
+              <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
+            </tr>
+            <tr class="offers__table-tr">
+              <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
+              <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
+              <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
+            </tr>
+            <tr class="offers__table-tr">
+              <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
+              <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
+              <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
+            </tr>
+          </table>
+        </section>
+        <section class="contact">
+          <h2 class="contact__header">Остались вопросы?</h2>
+          <h2 class="contact__header">Свяжитесь с нами!</h2>
+          <div class="wrapper__contact">
+            <div class="wrapper__tel">
+              <p class="contact__text">Звоните:</p>
+              <p class="contact__tel"><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+            </div>
+            <div class="wrapper__mail">
+              <p class="contact__text">Пишите:</p>
+              <p class="contact__mail"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            </div>
+            <div class="wrapper__address">
+              <p class="contact__text">Приезжайте в гости:</p>
+              <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
+            </div>
+          </div>
+          <div class="map"></div>
+        </section>
+    </div>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
@@ -107,8 +158,10 @@
         <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
         <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
       </ul>
-      <span class="developed">Разработано</span>
-      <a class="developed__image" href="#"><img src="img/html%20academy.png" alt="Разработано HTML Academy"></a>
+      <div class="wrapper__developed">
+        <span class="developed">Разработано</span>
+        <a class="developed__image" href="#"><img src="img/html%20academy.png" alt="Разработано HTML Academy"></a>
+      </div>
     </footer>
   </body>
 </html>

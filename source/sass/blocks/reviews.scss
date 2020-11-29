@@ -1,12 +1,20 @@
-.reviews {
+$tablet-width: 660px;
 
+.reviews {
+text-align: center;
 }
 
 .reviews__slider {
-
+  list-style: none;
+  padding: 0;
 }
 
 .reviews__item {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
 }
 
