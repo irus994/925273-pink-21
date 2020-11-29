@@ -1,12 +1,16 @@
 .name-form {
-
+  padding: 20px;
 }
-.name-form__list {
 
+.name-form__list {
+  list-style: none;
+  padding: 0;
 }
 
 .name-form__item {
-
+  display: flex;
+  flex-direction: column;
+  color: #D22856;
 }
 
 .name-form__label {
@@ -14,5 +18,9 @@
 }
 
 .name-form__input {
-
+  height: 59px;
+  font-size: 18px;
+  padding: 23px 20px;
+  box-sizing: border-box;
+  border: 2px #E5E5E5 solid;
 }

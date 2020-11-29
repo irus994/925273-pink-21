@@ -12,7 +12,7 @@ $desktop-width: 1200px;
   @media (min-width: $tablet-width) {
     height: 729px;
     width: 100%;
-    background: url("../../img/back-tablet.png") no-repeat;
+    background: url("../../img/background-tablet.png") no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -69,3 +69,69 @@ $desktop-width: 1200px;
 .wrapper__address {
 
 }
+
+.wrapper__form {
+  max-width: 1200px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 132px;
+    padding-right: 132px;
+  }
+}
+
+.wrapper__form-tablet {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+  }
+}
+
+.wrapper__form-desktop {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.wrapper__form-header {
+  height: 462px;
+  background: url("../../img/back-mobile.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    background: url("../../img/back-tablet.png") no-repeat;
+    height: 729px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/back-desktop-form.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.wrapper__form-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+

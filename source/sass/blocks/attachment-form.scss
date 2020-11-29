@@ -1,9 +1,22 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
 .attachment-form {
   background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    height: 297px;
+  }
 }
 
 .attachment-form__header {
   color: #D22856;
+}
+
+.attachment-form__list {
+  list-style: none;
+  padding: 0;
 }
 
 .attachment-form__item {
