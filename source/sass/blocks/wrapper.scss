@@ -85,24 +85,6 @@ $desktop-width: 1200px;
   }
 }
 
-.wrapper__form-tablet {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-end;
-  }
-}
-
-.wrapper__form-desktop {
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
 
 .wrapper__form-header {
   height: 462px;
@@ -125,12 +107,24 @@ $desktop-width: 1200px;
   }
 }
 
+.wrapper__form-flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .wrapper__form-button {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
   }
 }

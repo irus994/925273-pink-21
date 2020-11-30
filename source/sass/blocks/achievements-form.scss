@@ -3,10 +3,14 @@ $desktop-width: 1200px;
 
 .achievements-form {
   background-color: #f2f2f2;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
 
   @media (min-width: $desktop-width) {
     width: 936px;
-    margin-left: -251px;
     background: none;
     border: 2px #E5E5E5 solid;
   }

@@ -2,10 +2,10 @@ $tablet-width: 660px;
 $desktop-width: 1200px;
 
 .contact-form {
+  order: 3;
 
   @media (min-width: $desktop-width) {
     width: 936px;
-    margin-left: -251px;
   }
 }
 
