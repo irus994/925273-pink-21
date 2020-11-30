@@ -1,9 +1,15 @@
-.emotion-form {
+$tablet-width: 660px;
+$desktop-width: 1200px;
 
+.emotion-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .emotion-form__label {
   color: #D22856;
+  text-align: center;
+
 }
 
 .emotion-form__textarea {

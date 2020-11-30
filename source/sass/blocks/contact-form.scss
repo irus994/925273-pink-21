@@ -1,9 +1,20 @@
-.contact-form {
+$tablet-width: 660px;
+$desktop-width: 1200px;
 
+.contact-form {
+  order: 3;
+
+  @media (min-width: $desktop-width) {
+    width: 936px;
+  }
 }
 
 .contact-form__list {
-
+  list-style: none;
+  padding: 0;
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .contact-form__item {
