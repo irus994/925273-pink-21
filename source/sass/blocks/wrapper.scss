@@ -86,7 +86,7 @@ $desktop-width: 1200px;
 }
 
 
-.wrapper__form-header {
+.wrapper__header {
   height: 462px;
   background: url("../../img/back-mobile.png") no-repeat;
   background-size: cover;
@@ -107,17 +107,6 @@ $desktop-width: 1200px;
   }
 }
 
-.wrapper__form-flex {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 .wrapper__form-button {
   display: flex;
   flex-direction: column;
@@ -127,5 +116,20 @@ $desktop-width: 1200px;
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.wrapper__banner {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.wrapper__banner-text {
+  width: 100%;
+  padding-left: 17px;
+  padding-right: 17px;
+  //margin-left: 20px;
+  //margin-right: 20px;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
 }
 
