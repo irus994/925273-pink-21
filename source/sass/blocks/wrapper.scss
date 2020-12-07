@@ -44,9 +44,18 @@ $desktop-width: 1200px;
     padding-right: 20px;
     padding-left: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 130px;
+  }
 }
 
 .wrapper__developed {
+  padding-top: 53px;
+  padding-bottom: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -59,15 +68,15 @@ $desktop-width: 1200px;
 }
 
 .wrapper__tel {
-
+  padding-top: 35px;
 }
 
 .wrapper__mail {
-
+  padding-top: 35px;
 }
 
 .wrapper__address {
-
+  padding-top: 35px;
 }
 
 .wrapper__form {
@@ -129,3 +138,6 @@ $desktop-width: 1200px;
   }
 }
 
+.wrapper__hours-24 {
+  padding-left: 72px;
+}

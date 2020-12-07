@@ -6,12 +6,34 @@ $desktop-width: 1200px;
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+    padding-top: 54px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
   }
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
+    max-width: 1200px;
+    padding-left: 131px;
+    padding-right: 131px;
+    padding-bottom: 65px;
   }
 }
 
 .hours-24__image {
 
+}
+
+.hours-24__header {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.hours-24__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.hours-24__link {
+  color: #D22856;
 }

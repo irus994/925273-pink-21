@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/pink.png" alt="Логотип приложения PINK">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <picture class="page-header__image">
+            <source srcset="img/logotype-white-tablet.png" media="(min-width: 660px ) and (max-width: 1199px)">
+            <source srcset="img/logotype-white-desktop.png" media="(min-width: 1200px)">
+            <img src="img/pink.png" alt="Логотип приложения PINK">
+          </picture>
+        </a>
+        <nav class="main-nav main-nav--close">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <div class="wrapper__download-block">
@@ -45,7 +53,7 @@
       <div class="wrapper__main">
         <section class="tagline">
           <p class="tagline__text">Устали от серости мегаполиса?</p>
-          <p class="tagline__text">Нам есть, что вам предложить!</p>
+          <p class="tagline__text">Нам есть, что вам <br>предложить!</p>
         </section>
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества приложения PINK</h2>
@@ -78,7 +86,7 @@
               <picture class="advantages__image">
                 <source srcset="img/iphone-tablet.png" media="(min-width: 660px ) and (max-width: 1199px)">
                 <source srcset="img/screen-3.png" media="(min-width: 1200px)">
-                <img src="img/iphone-mobile.png" alt="Приветствие PINK на экране телефона">
+                <img class="advantages__image" src="img/iphone-mobile.png" alt="Приветствие PINK на экране телефона">
               </picture>
             </li>
           </ul>
@@ -90,14 +98,15 @@
           </picture>
           <div class="wrapper__hours-24">
             <h2 class="hours-24__header">Эффект на 24 часа!</h2>
-            <p class="hours-24__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="hours-24__text">Узнать больше об исследовании</a>
+            <p class="hours-24__text">Британские ученые провели исследования <br>и доказали, что положительный эффект от <br>использования приложения длится <br>целые сутки!</p>
+            <p class="hours-24__text"><a class="hours-24__link" href="#">Узнать больше об исследовании</a></p>
           </div>
         </section>
         <section class="reviews">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
           <ul class="reviews__slider">
             <li class="reviews__item">
+            <p class="reviews__age">25 лет, водитель трамвая</p>
             <p class="reviews__name">Николай Петров</p>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
@@ -107,24 +116,28 @@
           <h2 class="visually-hidden">Предложения</h2>
           <table class="offers__table">
             <tr class="offers__table-tr">
-              <th class="offers__table-th"><p class="offers__text--title">База</p><span class="offers__price">1,99 USD</span></th>
-              <th class="offers__table-th"><p class="offers__text--title">Стандарт</p><span class="offers__price">3,99 USD</span></th>
-              <th class="offers__table-th"><p class="offers__text--title">Анлим</p><span class="offers__price">9,99 USD</span></th>
+              <th class="offers__table-td--right-column offers__empty"></th>
+              <th class="offers__table-th"><p class="offers__text  offers__text--title">База</p><span class="offers__price">1,99 USD</span></th>
+              <th class="offers__table-th"><p class="offers__text  offers__text--title">Стандарт</p><span class="offers__price">3,99 USD</span></th>
+              <th class="offers__table-th"><p class="offers__text offers__text--title">Анлим</p><span class="offers__price">9,99 USD</span></th>
             </tr>
             <tr class="offers__table-tr">
-              <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
-              <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
-              <td class="offers__table-td"><p class="offers__text--description">Розовый фильтр</p></td>
+              <td class="offers__table-td offers__table-td--right-column"><p class="offers__text">Розовый фильтр</p></td>
+              <td class="offers__table-td option option--yes"><p class="offers__text offers__text--description">Розовый фильтр</p></td>
+              <td class="offers__table-td option option--yes"><p class="offers__text offers__text--description">Розовый фильтр</p></td>
+              <td class="offers__table-td option option--yes"><p class="offers__text offers__text--description">Розовый фильтр</p></td>
             </tr>
             <tr class="offers__table-tr">
-              <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
-              <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
-              <td class="offers__table-td"><p class="offers__text--description">Смайлики</p></td>
+              <td class="offers__table-td offers__table-td--right-column"><p class="offers__text">Смайлики</p></td>
+              <td class="offers__table-td option option--no"><p class="offers__text offers__text--description">Смайлики</p></td>
+              <td class="offers__table-td option option--yes"><p class="offers__text offers__text--description">Смайлики</p></td>
+              <td class="offers__table-td option option--yes"><p class="offers__text offers__text--description">Смайлики</p></td>
             </tr>
             <tr class="offers__table-tr">
-              <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
-              <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
-              <td class="offers__table-td"><p class="offers__text--description">Комментарии</p></td>
+              <td class="offers__table-td offers__table-td--right-column"><p class="offers__text">Комментарии</p></td>
+              <td class="offers__table-td option option--no"><p class="offers__text offers__text--description">Комментарии</p></td>
+              <td class="offers__table-td option option--no"><p class="offers__text offers__text--description">Комментарии</p></td>
+              <td class="offers__table-td option option--yes"><p class="offers__text offers__text--description">Комментарии</p></td>
             </tr>
           </table>
         </section>
@@ -134,19 +147,19 @@
           <div class="wrapper__contact">
             <div class="wrapper__tel">
               <p class="contact__text">Звоните:</p>
-              <p class="contact__tel"><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+              <p class="contact__tel"><a class="contact__link" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
             </div>
             <div class="wrapper__mail">
               <p class="contact__text">Пишите:</p>
-              <p class="contact__mail"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+              <p class="contact__mail"><a class="contact__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
             </div>
             <div class="wrapper__address">
               <p class="contact__text">Приезжайте в гости:</p>
               <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
             </div>
           </div>
-          <div class="map"></div>
         </section>
+        <div class="map"></div>
     </div>
     </main>
     <footer class="page-footer">
@@ -160,7 +173,7 @@
       </ul>
       <div class="wrapper__developed">
         <span class="developed">Разработано</span>
-        <a class="developed__image" href="#"><img src="img/html%20academy.png" alt="Разработано HTML Academy"></a>
+        <a class="developed__link" href="#"><img class="developed__image" src="img/html%20academy.png" alt="Разработано HTML Academy"></a>
       </div>
     </footer>
   </body>

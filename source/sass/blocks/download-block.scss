@@ -11,14 +11,26 @@ $desktop-width: 1200px;
   }
 
   @media (min-width: $desktop-width) {
-
+    max-width: 1200px;
+    margin: auto;
   }
 }
 
 .download-block__header {
   color: #ffffff;
-  font-size: 40px;
-  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0;
+  padding-top: 95px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 0;
+  }
 }
 
 .download-block__systems-list {
@@ -35,24 +47,28 @@ $desktop-width: 1200px;
 }
 
 .download-block__systems-item {
-
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .download-block__systems-link {
   display: block;
-  width: 47px;
+  width: 56px;
   height: 56px;
 
     &--ios {
       background: url("../../img/apple-logo.png") no-repeat;
+      background-position: center;
     }
 
     &--android {
       background: url("../../img/android-logo.png") no-repeat;
+      background-position: center;
     }
 
     &--windows {
       background: url("../../img/microsoft-logo.png") no-repeat;
+      background-position: center;
     }
 }
 
@@ -60,8 +76,15 @@ $desktop-width: 1200px;
   color: #ffffff;
   margin: 0;
   background-color: #1d2631;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 28px 20px 38px 20px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
+    font-size: 18px;
+    padding: 45px 0px 38px 0px;
   }
 }
