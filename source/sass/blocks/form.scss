@@ -2,6 +2,17 @@
   margin: auto;
 }
 
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .form__asterisk-sign {
   color: #D22856;
 }

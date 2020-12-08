@@ -1,29 +1,4 @@
-//@font-face {
-//  font-family: "Open Sans";
-//  font-style: normal;
-//  font-weight: normal;
-//  src: local("Open Sans"),
-//    url("../fonts/opensans.woff2") format("woff2"),
-//    url("../fonts/opensans.woff") format("woff");
-//}
-//
-//@font-face {
-//  font-family: "Open Sans Bold";
-//  font-style: normal;
-//  font-weight: bold;
-//  src: local("Open Sans Bold"),
-//    url("../fonts/opensansbold.woff2") format("woff2"),
-//    url("../fonts/opensansbold.woff") format("woff");
-//}
-//
-//@font-face {
-//  font-family: "Open Sans Light";
-//  font-style: normal;
-//  font-weight: lighter;
-//  src: local("Open Sans Light"),
-//    url("../fonts/opensanslight.woff2") format("woff2"),
-//    url("../fonts/opensanslight.woff") format("woff");
-//}
+// Начните писать стили здесь
 @import "visually-hidden";
 @import "blocks/page";
 @import "blocks/page-header";
@@ -55,4 +30,5 @@
 @import "blocks/option";
 @import "blocks/dots";
 @import "blocks/hit";
-
+@import "blocks/catalog-header";
+@import "hidden";
