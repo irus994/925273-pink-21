@@ -1,0 +1,28 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+.hit {
+  position: relative;
+  //&::before {
+  //  content: "";
+  //  display: block;
+  //  width: 74px;
+  //  height: 74px;
+  //  background: url("../../img/hit.png") no-repeat;
+  //  position: absolute;
+  //  top: 0;
+  //}
+
+  &::after {
+    content: "хит";
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    //line-height: 74px;
+    transform: rotate(-45deg);
+    text-transform: uppercase;
+    //position: absolute;
+    height: auto;
+    top: 15px;
+  }
+}
