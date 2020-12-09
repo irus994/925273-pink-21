@@ -40,6 +40,10 @@ $desktop-width: 1200px;
   border-right: 2px #ffffff solid;
   padding: 0;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    height: 75px;
+  }
 }
 
 .offers__table-td {
