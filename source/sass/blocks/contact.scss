@@ -1,26 +1,57 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
 .contact {
   text-align: center;
+  padding-top: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 74px;
 }
 
 .contact__header {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  margin: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .contact__text {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
 
+.contact__link {
+  color: #D22856;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .contact__tel {
   font-size: 24px;
-  color: #D22856;
+  margin: 0;
 }
 
 .contact__mail {
   font-size: 24px;
-  color: #D22856;
+  margin: 0;
 }
 
 .contact__address {
   font-size: 24px;
   color: #D22856;
+  margin: 0;
 }

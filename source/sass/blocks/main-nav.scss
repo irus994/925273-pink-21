@@ -1,13 +1,18 @@
 $desktop-width: 1200px;
 
 .main-nav {
+  &--close {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
 }
 
 .main-nav__list {
   list-style: none;
   padding-left: 0;
   margin: 0;
-
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -23,6 +28,15 @@ $desktop-width: 1200px;
   border-bottom: 1px #000000 solid;
   text-align: center;
   background-color: #1d2631;
+  box-sizing: border-box;
+
+  &:first-child {
+    border-top: 1px #000000 solid;
+
+    @media (min-width: $desktop-width) {
+      border: none;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     border: none;
@@ -33,5 +47,10 @@ $desktop-width: 1200px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  line-height: 63px;
 
+  @media (min-width: $desktop-width) {
+    text-transform: none;
+    font-size: 18px;
+  }
 }

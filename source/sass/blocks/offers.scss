@@ -1,23 +1,119 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
 .offers {
   background-color: #f2f2f2;
+  overflow: hidden;
+  //position: relative;
+  //
+  //&::after {
+  //  content: "";
+  //  position: absolute;
+  //  height: 100%;
+  //  width: 100%;
+  //  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='320' height='94' viewBox='0 0 320 194' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M-451 70.7692L156 35.3846L763 0V506H-451V70.7692Z' fill='blue'/%3e%3c/svg%3e") no-repeat;
+  //  background-size: cover;
+  //  top: -50%;
+  //  right: 0;
+  //}
+  //не получается ничего с краями
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 73px;
+    padding-top: 40px;
+    //не могу измерить на макете padding-top - на глаз
+  }
 }
 
 .offers__table {
   margin: auto;
-
+  border-collapse: collapse;
 }
 
 .offers__table-tr {
-
+  margin: 0;
 }
 
 .offers__table-th {
+  background-color: #283645;
+  height: 95px;
+  border-right: 2px #ffffff solid;
+  padding: 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    height: 75px;
+  }
+}
+
+.offers__table-td {
+  border: 2px #E5E5E5 solid;
+  min-width: 267px;
+  height: 59px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    min-width: 152px;
+    height: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 234px;
+    height: 59px;
+  }
+
+  &--right-column {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+      box-sizing: border-box;
+    }
+  }
+
+  &--right-column p {
+    @media (min-width: $tablet-width) {
+      text-transform: none;
+      font-size: 14px;
+      line-height: 40px;
+      color: #283645;
+      padding: 7px 15px;
+      vertical-align: center;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 19px;
+    }
+  }
+}
+
+.offers__price {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+
+.offers__text {
+  text-transform: uppercase;
+  margin: 0;
 
   &--title {
-
+    color: #ffffff;
+    padding-top: 19px;
   }
+
   &--description {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 24px 20px;
 
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
-
 }
+

@@ -1,0 +1,29 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+.option {
+
+  &--yes {
+    background: url("../../img/yes.png") no-repeat;
+    background-position: 215px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/yes.png") no-repeat;
+      background-position: center;
+      background-color: #ffffff;
+    }
+  }
+
+  &--no {
+    background: url("../../img/no.png") no-repeat;
+    background-position: 215px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      background: url("../../img/no.png") no-repeat;
+      background-position: center;
+      background-color: #ffffff;
+    }
+  }
+}

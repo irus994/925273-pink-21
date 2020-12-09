@@ -1,7 +1,38 @@
 $tablet-width: 660px;
+$desktop-width: 1200px;
 
 .reviews {
-text-align: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  //position: relative;
+  //z-index: 10;
+
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  height: 100%;
+  //  width: 100%;
+  //  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='320' height='94' viewBox='0 0 320 194' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M-451 70.7692L156 35.3846L763 0V506H-451V70.7692Z' fill='blue'/%3e%3c/svg%3e") no-repeat;
+  //  background-size: cover;
+  //  top: 70%;
+  //  right: 0;
+  //}
+
+  @media (min-width: $tablet-width) {
+    margin-top: 109px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 .reviews__slider {
@@ -11,17 +42,93 @@ text-align: center;
 
 .reviews__item {
   display: block;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
+    margin-top: 135px;
+  }
+
+  &::before {
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 79px;
+      height: 63px;
+      background: url("../../img/quotes.png") no-repeat;
+      position: absolute;
+      top: -58px;
+      right: 46%;
+    }
+  }
+}
+
+.reviews__age {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    padding-bottom: 49px;
+  }
 }
 
 .reviews__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin: auto;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
 
+  @media (min-width: $desktop-width) {
+    padding-right: 104px;
+    padding-left: 104px;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 100%;
+      background: url("../../img/left arrow.png") no-repeat;
+      position: absolute;
+      top: 25%;
+      right: 100%;
+    }
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 22px;
+      height: 41px;
+      background: url("../../img/right arrow.png") no-repeat;
+      position: absolute;
+      top: 25%;
+      left: 100%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }

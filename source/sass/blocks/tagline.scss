@@ -5,11 +5,18 @@ $desktop-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+  margin-bottom: 46px;
+  margin-top: 46px;
+}
+
+.tagline__text {
   font-size: 24px;
+  font-weight: 200;
+  line-height: 120%;
+  margin: 0;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 36px;
-    padding-right: 36px;
     font-size: 40px;
   }
 
@@ -18,8 +25,4 @@ $desktop-width: 1200px;
     padding-right: 210px;
     font-size: 50px;
   }
-}
-
-.tagline__text {
-
 }

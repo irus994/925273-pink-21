@@ -5,11 +5,25 @@ $desktop-width: 1200px;
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 130px;
+    justify-content: space-around;
     margin: auto;
   }
 }
-.page-header__logo {
 
+
+.page-header__logo {
+  padding: 20px;
+  display: block;
+}
+
+.page-header__wrapper {
+
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 0 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

@@ -1,0 +1,37 @@
+$tablet-width: 660px;
+$desktop-width: 1200px;
+
+.hit {
+  position: relative;
+
+  &::after {
+    content: "Хит";
+    position: absolute;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 30px;
+    transform: rotate(-45deg);
+    top: 4px;
+    left: 13px;
+
+    @media (min-width: $tablet-width) and (max-width: 1199px) {
+      top: 10px;
+      left: 7px;
+    }
+  }
+}
+
+.hit__image {
+  position: absolute;
+  top: -11px;
+  left: -2px;
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    height: 61px;
+    width: 61px;
+    top: 0;
+  }
+}
+
