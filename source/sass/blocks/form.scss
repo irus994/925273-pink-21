@@ -9,8 +9,13 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
+}
+
+.form__asterisk {
+  margin-top: 46px;
+  display: block;
 }
 
 .form__asterisk-sign {
@@ -18,5 +23,20 @@
 }
 
 .form__asterisk-text {
-
+  font-size: 14px;
+  color: #283645;
 }
+
+.form__button {
+  height: 59px;
+  width: 276px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #2AAB6D;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 23px 45px;
+  border-radius: 2px;
+
+ }
