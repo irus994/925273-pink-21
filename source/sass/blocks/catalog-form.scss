@@ -66,6 +66,8 @@ $desktop-width: 1200px;
   display: flex;
   padding-left: 0;
   justify-content: center;
+  margin-top: 34px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -184,6 +186,15 @@ $desktop-width: 1200px;
 .catalog-form__button-wrapper {
   display: flex;
   flex-direction: column;
+  border-top: 1px rgba(16%, 21%, 27%, 0.1) solid;
+  padding-top: 38px;
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
