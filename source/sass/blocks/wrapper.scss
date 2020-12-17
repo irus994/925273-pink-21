@@ -145,14 +145,29 @@ $desktop-width: 1200px;
   padding-left: 20px;
 }
 
-.wrapper__banner-text {
+.wrapper__user-text {
   width: 100%;
-  padding-left: 17px;
-  padding-right: 17px;
-  //margin-left: 20px;
-  //margin-right: 20px;
   box-sizing: border-box;
   background-color: #F2F2F2;
+  padding: 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 155px;
+    padding: 25px 30px;
+  }
+}
+
+.wrapper__banner-text {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #F2F2F2;
+  padding: 25px 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    width: 940px;
+  }
 }
 
 .wrapper__hours-24 {
