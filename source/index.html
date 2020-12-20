@@ -13,12 +13,13 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <picture class="page-header__image">
-            <source srcset="img/logotype-white-tablet.png" media="(min-width: 660px ) and (max-width: 1199px)">
-            <source srcset="img/logotype-white-desktop.png" media="(min-width: 1200px)">
+            <source srcset="img/logotype-white-tablet.png" media="(min-width: 660px ) and (max-width: 959px)">
+            <source srcset="img/logotype-white-desktop.png" media="(min-width: 960px)">
             <img src="img/pink.png" alt="Логотип приложения PINK">
           </picture>
         </a>
         <nav class="main-nav main-nav--close">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
@@ -55,45 +56,47 @@
           <p class="tagline__text">Устали от серости мегаполиса?</p>
           <p class="tagline__text">Нам есть, что вам <br>предложить!</p>
         </section>
-        <section class="advantages">
-          <h2 class="visually-hidden">Преимущества приложения PINK</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__header"> Поднимает настроение</h3>
-              <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__header">Меняет мир вокруг</h3>
-              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__header">Заводит новых друзей</h3>
-              <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
-          <ul class="advantages__picture-list">
-            <li class="advantages__picture-item advantages__picture-item--desktop-only">
-              <picture class="advantages__image">
-                <img src="img/screen-1.png" alt="Приветствие PINK на экране телефона">
-              </picture>
-            </li>
-            <li class="advantages__picture-item advantages__picture-item--desktop-only">
-              <picture class="advantages__image">
-                <img src="img/screen-2.png" alt="Приветствие PINK на экране телефона">
-              </picture>
-            </li>
-            <li class="advantages__picture-item">
-              <picture class="advantages__image">
-                <source srcset="img/iphone-tablet.png" media="(min-width: 660px ) and (max-width: 1199px)">
-                <source srcset="img/screen-3.png" media="(min-width: 1200px)">
-                <img class="advantages__image" src="img/iphone-mobile.png" alt="Приветствие PINK на экране телефона">
-              </picture>
-            </li>
-          </ul>
-        </section>
+        <div class="wrapper__advantages">
+          <section class="advantages">
+            <h2 class="visually-hidden">Преимущества приложения PINK</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__header"> Поднимает настроение</h3>
+                <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__header">Меняет мир вокруг</h3>
+                <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__header">Заводит новых друзей</h3>
+                <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <ul class="advantages__picture-list">
+              <li class="advantages__picture-item advantages__picture-item--desktop-only">
+                <picture class="advantages__image">
+                  <img src="img/screen-1.png" alt="Приветствие PINK на экране телефона">
+                </picture>
+              </li>
+              <li class="advantages__picture-item advantages__picture-item--desktop-only">
+                <picture class="advantages__image">
+                  <img src="img/screen-2.png" alt="Приветствие PINK на экране телефона">
+                </picture>
+              </li>
+              <li class="advantages__picture-item">
+                <picture class="advantages__image">
+                  <source srcset="img/iphone-tablet.png" media="(min-width: 660px ) and (max-width: 959px)">
+                  <source srcset="img/screen-3.png" media="(min-width: 960px)">
+                  <img class="advantages__image" src="img/iphone-mobile.png" alt="Приветствие PINK на экране телефона">
+                </picture>
+              </li>
+            </ul>
+          </section>
+        </div>
         <section class="hours-24">
           <picture class="hours-24__image">
-            <source srcset="img/timer-desktop.png" media="(min-width: 1200px)">
+            <source srcset="img/timer-desktop.png" media="(min-width: 960px)">
             <img src="img/timer-tablet.png" alt="таймер 24 часа">
           </picture>
           <div class="wrapper__hours-24">

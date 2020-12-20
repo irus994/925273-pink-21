@@ -1,28 +1,19 @@
-$tablet-width: 660px;
-$desktop-width: 1200px;
+
 
 .offers {
   background-color: #f2f2f2;
   overflow: hidden;
-  //position: relative;
-  //
-  //&::after {
-  //  content: "";
-  //  position: absolute;
-  //  height: 100%;
-  //  width: 100%;
-  //  background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='320' height='94' viewBox='0 0 320 194' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M-451 70.7692L156 35.3846L763 0V506H-451V70.7692Z' fill='blue'/%3e%3c/svg%3e") no-repeat;
-  //  background-size: cover;
-  //  top: -50%;
-  //  right: 0;
-  //}
-  //не получается ничего с краями
 
   @media (min-width: $tablet-width) {
     padding-bottom: 73px;
     padding-top: 40px;
     //не могу измерить на макете padding-top - на глаз
   }
+
+  //@media (min-width: $desktop-width) {
+  //  margin: auto;
+  //  max-width: 960px;
+  //}
 }
 
 .offers__table {
@@ -41,7 +32,7 @@ $desktop-width: 1200px;
   padding: 0;
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) and (max-width: 1199px) {
+  @media (min-width: $tablet-width) and (max-width: 959px) {
     height: 75px;
   }
 }
