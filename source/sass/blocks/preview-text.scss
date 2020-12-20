@@ -1,5 +1,4 @@
-$tablet-width: 660px;
-$desktop-width: 1200px;
+
 
 .preview-text {
   padding-right: 20px;
@@ -11,11 +10,11 @@ $desktop-width: 1200px;
   display: block;
   margin-top: -200px;
   background-color: #ffffff;
-  height: 202px;
-  box-sizing: border-box;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
+    padding-bottom: 85px;
     margin-top: -295px;
   }
 }

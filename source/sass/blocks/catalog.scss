@@ -1,83 +1,268 @@
-$tablet-width: 660px;
-$desktop-width: 1200px;
 
-.catalog {
-
-}
+//.catalog {
+//
+//}
 
 .catalog__banner {
-
+  position: relative;
 }
 
 .catalog__banner-img {
   width: 100%;
 }
 
-.catalog__image {
+.catalog__image-img {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.catalog__user-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .catalog__banner-text {
-  padding-left: 10px;
+  color: #283645;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.catalog__banner-user {
-  padding-left: 10px;
+.catalog__banner-user,
+.catalog__user {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.catalog__banner-time,
+.catalog__user-time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+
+.catalog__user-like {
+  color: #d22856;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  align-self: flex-end;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-bottom: 28px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 14px;
+    width: 14px;
+    background: url("../../img/heart.png") no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 2px;
+      right: 0;
+      left: calc(100% - 13px);
+    }
+  }
 }
 
 .catalog__banner-like {
-  padding-left: 10px;
+  color: #d22856;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: calc(100% - 20px - 20px - 120px);
+    margin-top: -20px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 14px;
+    width: 14px;
+    background: url("../../img/heart.png") no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 2px;
+      right: 0;
+      left: calc(100% - 13px);
+    }
+  }
+
+  .catalog__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    @media (min-width: $tablet-width) {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: auto;
+    }
+  }
 }
 
-.catalog__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+.catalog__banner-image {
+  &::before {
+    content: "панорама дня";
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #d22856;
+    padding: 11px 19px;
+    width: 140px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    right: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
+  }
 }
+
 
 .catalog__list {
   list-style: none;
   padding: 0;
-  background-color: #F2F2F2;
+  max-width: 1200px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
   }
 }
 
 .catalog__item {
-  background-color: #f2f2f2;
-
   @media (min-width: $tablet-width) {
-    width: 300px;
-  }
-
-  @media (min-width: $desktop-width) {
-
+    box-sizing: border-box;
+    margin: 0;
   }
 }
 
 .catalog__card {
+  margin-top: 20px;
+  background-color: #ffffff;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
-.catalog__user {
+//стилицация бегунка
 
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #283645;
+}
+input[type=range]::-webkit-slider-thumb {
+  border: 2px solid #D22856;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #D22856;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #283645;
+}
+input[type=range]::-moz-range-thumb {
+  border: 2px solid #D22856;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #283645;
+}
+input[type=range]::-ms-fill-upper {
+  background: #283645;
+}
+input[type=range]::-ms-thumb {
+  border: 2px solid #D22856;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #283645;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #283645;
 }
 
-.catalog__user-text {
-
-}
-
-.catalog__user-like {
-
-}
-
-.catalog__conclusion {
-
-}
-
-.catalog__conclusion-text {
-
-}
