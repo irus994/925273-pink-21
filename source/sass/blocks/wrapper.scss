@@ -119,22 +119,40 @@
 
 .wrapper__header {
   height: 462px;
-  background: url("../../img/back-mobile.png") no-repeat;
+  background: url("../../img/back-mobile.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
-    background: url("../../img/back-tablet.png") no-repeat;
-    height: 729px;
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/back-mobile@2x.jpg") no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  @media (min-width: $desktop-width) {
-    background: url("../../img/back-desktop-form.png") no-repeat;
+  @media (min-width: $tablet-width) {
+    background: url("../../img/back-tablet.jpg") no-repeat;
+    height: 729px;
     background-size: cover;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/back-tablet@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../../img/back-desktop-form.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/back-desktop-form@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 }
 
@@ -209,6 +227,28 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+  }
+}
+
+.wrapper__por-up-button {
+  width: 100%;
+  padding: 52px 22px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 52px 83px;
+    box-sizing: border-box;
+
+    &--failure {
+      padding-top: 0;
+      @media (min-width: $desktop-width) {
+        background-color: #F2F2F2;
+      }
+    }
+    &--success {
+      background-color: #F2F2F2;
+    }
   }
 }
 
