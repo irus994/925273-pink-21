@@ -7,6 +7,11 @@
   background-color: #ffffff;
   margin: auto;
   border-top: 1px solid rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+
+  &--success.close {
+    display: none;
+  }
 
   &--success {
     top: 1640px;
@@ -23,7 +28,18 @@
       top: 1383px;
       left: calc(50% - 460px / 2);
     }
+
+    @media (min-width: $desktop-width) {
+      width: 780px;
+      position: absolute;
+      left: calc(50% - 780px / 2);
+      top: 1275px;
+    }
   }
+  &--failure.close {
+    display: none;
+  }
+
   &--failure {
     top: 1130px;
     left: calc(50% - 320px / 2);
@@ -38,6 +54,12 @@
       border-top: 1px solid rgba(0, 0, 0, 0.03);
       top: 910px;
       left: calc(50% - 460px / 2);
+    }
+    @media (min-width: $desktop-width) {
+      width: 780px;
+      position: absolute;
+      left: calc(50% - 780px / 2);
+      top: 822px;
     }
   }
 }
@@ -54,6 +76,9 @@
     padding-top: 49px;
     margin: 0 auto;
     width: 320px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 
