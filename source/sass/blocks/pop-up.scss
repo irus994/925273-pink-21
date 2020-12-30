@@ -7,26 +7,59 @@
   background-color: #ffffff;
   margin: auto;
   border-top: 1px solid rgba(0, 0, 0, 0.03);
-  top: 1130px;
-  left: 0;
+  box-sizing: border-box;
 
-  @media (min-width: $tablet-width) {
-    width: 460px;
-    text-align: center;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    position: absolute;
-    background-color: #ffffff;
-    margin: auto;
-    border-top: 1px solid rgba(0, 0, 0, 0.03);
+  &--success.close {
+    display: none;
+  }
 
-    &--failure {
-      top: 910px;
+  &--success {
+    top: 1640px;
+    left: calc(50% - 320px / 2);
+
+    @media (min-width: $tablet-width) {
+      width: 460px;
+      text-align: center;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      position: absolute;
+      background-color: #ffffff;
+      margin: auto;
+      border-top: 1px solid rgba(0, 0, 0, 0.03);
+      top: 1383px;
       left: calc(50% - 460px / 2);
     }
 
-    &--success {
-      top: 1383px;
+    @media (min-width: $desktop-width) {
+      width: 780px;
+      position: absolute;
+      left: calc(50% - 780px / 2);
+      top: 1275px;
+    }
+  }
+  &--failure.close {
+    display: none;
+  }
+
+  &--failure {
+    top: 1130px;
+    left: calc(50% - 320px / 2);
+
+    @media (min-width: $tablet-width) {
+      width: 460px;
+      text-align: center;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      position: absolute;
+      background-color: #ffffff;
+      margin: auto;
+      border-top: 1px solid rgba(0, 0, 0, 0.03);
+      top: 910px;
       left: calc(50% - 460px / 2);
+    }
+    @media (min-width: $desktop-width) {
+      width: 780px;
+      position: absolute;
+      left: calc(50% - 780px / 2);
+      top: 822px;
     }
   }
 }
@@ -34,6 +67,8 @@
 .pop-up__header {
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
+  padding-top: 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -42,12 +77,27 @@
     margin: 0 auto;
     width: 320px;
   }
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .pop-up__text {
   font-size: 14px;
-  padding-bottom: 50px;
   margin: 0 auto;
+  padding-left: 27px;
+  padding-right: 27px;
+  line-height: 24px;
+
+  &--success {
+    padding-bottom: 41px;
+    padding-top: 37px;
+  }
+
+  &--failure {
+    padding-bottom: 50px;
+    padding-top: 37px;
+  }
 
   @media (min-width: $tablet-width) {
     color: #283645;
