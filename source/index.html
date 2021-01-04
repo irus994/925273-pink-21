@@ -12,11 +12,20 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <picture>
-            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">
-            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">
-            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">
-          </picture>
+<!--          <picture>-->
+<!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
+<!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
+<!--            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">-->
+<!--          </picture>-->
+          <svg class="logo__header-desktop" width="147" height="40">
+            <use xlink:href="/icons/sprite-logo.svg#big-white-logo"></use>
+          </svg>
+          <svg class="logo__header-tablet" width="145" height="40">
+            <use xlink:href="/icons/sprite-logo.svg#middle-white-logo"></use>
+          </svg>
+          <svg class="logo__header-mobile" width="74" height="23">
+            <use xlink:href="/icons/sprite-logo.svg#small-white-logo"></use>
+          </svg>
         </a>
         <nav class="main-nav main-nav--close">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -75,16 +84,22 @@
             <ul class="advantages__picture-list">
               <li class="advantages__picture-item advantages__picture-item--desktop-only">
                 <picture>
+                  <source type="image/webp" srcset="img/screen-1.webp 1x, img/screen-1@2x.webp 2x">
                   <img class="advantages__image" src="img/screen-1.png" srcset="img/screen-1@2x.png 2x" alt="Приветствие PINK на экране телефона">
                 </picture>
               </li>
               <li class="advantages__picture-item advantages__picture-item--desktop-only">
                 <picture>
+                  <source type="image/webp" srcset="img/screen-2.webp 1x, img/screen-2@2x.webp 2x">
                   <img class="advantages__image" src="img/screen-2.png" srcset="img/screen-2@2x.png 2x" alt="Приветствие PINK на экране телефона">
                 </picture>
               </li>
               <li class="advantages__picture-item">
                 <picture>
+                  <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/iphone-tablet.webp 1x, img/iphone-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/screen-3.webp 1x, img/screen-3@2x.webp 2x">
+                  <source type="image/webp" srcset="img/iphone-mobile.webp 1x, img/iphone-mobile@2x.webp 2x">
+
                   <source srcset="img/iphone-tablet.png 1x, img/iphone-tablet@2x.png 2x" media="(min-width: 660px) and (max-width: 959px)">
                   <source srcset="img/screen-3.png 1x, img/screen-3@2x.png 2x" media="(min-width: 960px)">
                   <img class="advantages__image" src="img/iphone-mobile.png" srcset="img/iphone-mobile@2x.png 2x" alt="Приветствие PINK на экране телефона">
@@ -182,6 +197,9 @@
         </section>
         <div class="map">
           <picture>
+            <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-image-mobile.webp 1x, img/map-image-mobile@2x.webp 2x">
             <source srcset="img/map-image-tablet.jpg 1x, img/map-image-tablet@2x.jpg 2x" media="(min-width: 660px) and (max-width: 959px)">
             <source srcset="img/map-image-desktop.jpg 1x, img/map-image-desktop@2x.jpg 2x" media="(min-width: 960px)">
             <img class="map__image" src="img/map-image-mobile.jpg" srcset="img/map-image-mobile@2x.jpg 2x" alt="Карта с расположением компании">
@@ -191,10 +209,16 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <picture>
-          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">
-          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">
-        </picture>
+<!--        <picture>-->
+<!--          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">-->
+<!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
+<!--        </picture>-->
+        <svg class="logo__footer-desktop" width="147" height="40">
+          <use xlink:href="/icons/sprite-logo.svg#big-blue-logo"></use>
+        </svg>
+        <svg class="logo__footer-tablet" width="145" height="40">
+          <use xlink:href="/icons/sprite-logo.svg#middle-blue-logo"></use>
+        </svg>
       </a>
       <ul class="social-button">
         <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
