@@ -12,11 +12,20 @@
   <header class="page-header">
   <div class="page-header__wrapper">
     <a class="page-header__logo">
-      <picture>
-        <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">
-        <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">
-        <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">
-      </picture>
+      <!--          <picture>-->
+      <!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
+      <!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
+      <!--            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">-->
+      <!--          </picture>-->
+      <svg class="logo__header-desktop" width="147" height="40">
+        <use xlink:href="/icons/sprite-logo.svg#big-white-logo"></use>
+      </svg>
+      <svg class="logo__header-tablet" width="145" height="40">
+        <use xlink:href="/icons/sprite-logo.svg#middle-white-logo"></use>
+      </svg>
+      <svg class="logo__header-mobile" width="74" height="23">
+        <use xlink:href="/icons/sprite-logo.svg#small-white-logo"></use>
+      </svg>
     </a>
     <nav class="main-nav main-nav--close">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -133,10 +142,16 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo">
-      <picture>
-        <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">
-        <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">
-      </picture>
+      <!--        <picture>-->
+      <!--          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">-->
+      <!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
+      <!--        </picture>-->
+      <svg class="logo__footer-desktop" width="147" height="40">
+        <use xlink:href="/icons/sprite-logo.svg#big-blue-logo"></use>
+      </svg>
+      <svg class="logo__footer-tablet" width="145" height="40">
+        <use xlink:href="/icons/sprite-logo.svg#middle-blue-logo"></use>
+      </svg>
     </a>
     <ul class="social-button">
       <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
