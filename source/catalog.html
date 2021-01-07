@@ -12,11 +12,20 @@
 <header class="page-header">
   <div class="page-header__wrapper">
     <a class="page-header__logo">
-      <picture>
-        <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">
-        <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">
-        <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">
-      </picture>
+      <!--          <picture>-->
+      <!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
+      <!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
+      <!--            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">-->
+      <!--          </picture>-->
+      <svg class="logo__header-desktop" width="147" height="40">
+        <use xlink:href="/icons/sprite-logo.svg#big-white-logo"></use>
+      </svg>
+      <svg class="logo__header-tablet" width="145" height="40">
+        <use xlink:href="/icons/sprite-logo.svg#middle-white-logo"></use>
+      </svg>
+      <svg class="logo__header-mobile" width="74" height="23">
+        <use xlink:href="/icons/sprite-logo.svg#small-white-logo"></use>
+      </svg>
     </a>
     <nav class="main-nav main-nav--close">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,9 +50,13 @@
     </div>
     <article class="catalog__banner">
       <picture class="catalog__banner-image">
+        <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+        <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
+
         <source srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
         <source srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
-        <img class="catalog__banner-img" src="img/panorama-mobile.png" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+        <img class="catalog__banner-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
       </picture>
       <div class="wrapper__banner">
         <div class="wrapper__banner-text">
@@ -59,6 +72,10 @@
         <li class="catalog__item">
           <article class="catalog__card">
             <picture class="catalog__image">
+              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
               <source srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
               <source srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <img class="catalog__image-img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -75,6 +92,10 @@
         <li class="catalog__item">
           <article class="catalog__card">
             <picture class="catalog__image">
+              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
               <source srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
               <source srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <img class="catalog__image-img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -91,6 +112,10 @@
         <li class="catalog__item">
           <article class="catalog__card">
             <picture class="catalog__image">
+              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
               <source srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
               <source srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <img class="catalog__image-img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -106,6 +131,10 @@
         <li class="catalog__item">
           <article class="catalog__card">
             <picture class="catalog__image">
+              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
               <source srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
               <source srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <img class="catalog__image-img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -122,6 +151,10 @@
         <li class="catalog__item">
           <article class="catalog__card">
             <picture class="catalog__image">
+              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
+
               <source srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
               <source srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <img class="catalog__image-img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -138,6 +171,10 @@
         <li class="catalog__item">
           <article class="catalog__card">
             <picture class="catalog__image">
+              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
+
               <source srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
               <source srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x" media="(min-width: 960px)">
               <img class="catalog__image-img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя">
@@ -195,10 +232,16 @@
   </main>
 <footer class="page-footer">
   <a class="page-footer__logo">
-    <picture>
-      <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">
-      <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">
-    </picture>
+    <!--        <picture>-->
+    <!--          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">-->
+    <!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
+    <!--        </picture>-->
+    <svg class="logo__footer-desktop" width="147" height="40">
+      <use xlink:href="/icons/sprite-logo.svg#big-blue-logo"></use>
+    </svg>
+    <svg class="logo__footer-tablet" width="145" height="40">
+      <use xlink:href="/icons/sprite-logo.svg#middle-blue-logo"></use>
+    </svg>
   </a>
   <ul class="social-button">
     <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
