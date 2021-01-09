@@ -92,6 +92,11 @@
   text-transform: uppercase;
   line-height: 63px;
 
+  &:hover {
+    fill: #D22856;
+  }
+
+
   @media (min-width: $desktop-width) {
     text-transform: none;
     font-size: 18px;

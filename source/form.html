@@ -1,188 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Форма отправки</title>
-  <link rel="stylesheet" href="/css/style.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body class="page__body">
-  <header class="page-header">
-  <div class="page-header__wrapper">
-    <a class="page-header__logo">
-      <!--          <picture>-->
-      <!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
-      <!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
-      <!--            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">-->
-      <!--          </picture>-->
-      <svg class="logo__header-desktop" width="147" height="40">
-        <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
-      </svg>
-      <svg class="logo__header-tablet" width="145" height="40">
-        <use xlink:href="/icons/sprite.svg#logotype-white-tablet"></use>
-      </svg>
-      <svg class="logo__header-mobile" width="74" height="23">
-        <use xlink:href="/icons/sprite.svg#pink"></use>
-      </svg>
-    </a>
-    <nav class="main-nav main-nav--close">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-  <section class="form-header">
-    <div class="wrapper__header">
-      <h1 class="form-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма отправки</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <!--          <picture>-->
+        <!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
+        <!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
+        <!--            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">-->
+        <!--          </picture>-->
+        <svg class="logo__header-desktop" width="147" height="40">
+          <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
+        </svg>
+        <svg class="logo__header-tablet" width="145" height="40">
+          <use xlink:href="/icons/sprite.svg#logotype-white-tablet"></use>
+        </svg>
+        <svg class="logo__header-mobile" width="74" height="23">
+          <use xlink:href="/icons/sprite.svg#pink"></use>
+        </svg>
+      </a>
+      <nav class="main-nav main-nav--close">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
-  <main class="main">
-    <section class="preview-text">
-        <p class="preview-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-        <p class="preview-text__text preview-text__text--additionally" >Пожалуйста, заполните форму ниже</p>
+  </header>
+    <section class="form-header">
+      <div class="wrapper__header">
+        <h1 class="form-header__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </section>
-    <div class="wrapper__form">
-      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-        <div class="form__wrapper">
-          <div class="name-form">
-            <ul class="name-form__list">
-              <li class="name-form__item">
-                <label class="name-form__label" for="user-surname"> Фамилия:</label>
-                <input class="name-form__input" type="text" name="surname" id="user-surname" placeholder="Укажите фамилию *">
-              </li>
-              <li class="name-form__item">
-                <label class="name-form__label" for="user-name"> Имя:</label>
-                <input class="name-form__input" type="text" name="name" id="user-name" placeholder="Введите ваше имя *">
-              </li>
-              <li class="name-form__item">
-                <label class="name-form__label" for="user-patronymic"> Отчество:</label>
-                <input class="name-form__input" type="text" name="patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
-              </li>
-            </ul>
+    <main class="main">
+      <section class="preview-text">
+          <p class="preview-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="preview-text__text preview-text__text--additionally" >Пожалуйста, заполните форму ниже</p>
+      </section>
+      <div class="wrapper__form">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="form__wrapper">
+            <div class="name-form">
+              <ul class="name-form__list">
+                <li class="name-form__item">
+                  <label class="name-form__label" for="user-surname"> Фамилия:</label>
+                  <input class="name-form__input" type="text" name="surname" id="user-surname" placeholder="Укажите фамилию *">
+                </li>
+                <li class="name-form__item">
+                  <label class="name-form__label" for="user-name"> Имя:</label>
+                  <input class="name-form__input" type="text" name="name" id="user-name" placeholder="Введите ваше имя *">
+                </li>
+                <li class="name-form__item">
+                  <label class="name-form__label" for="user-patronymic"> Отчество:</label>
+                  <input class="name-form__input" type="text" name="patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </div>
+            <div class="achievements-form">
+                  <p class="achievements-form__header">Ваши безбашенные приключения</p>
+                  <ul class="achievements-form__list">
+                    <li class="achievements-form__item">
+                      <input class="achievements-form__input" type="checkbox" checked name="selfie-shark" id="selfie">
+                      <label class="achievements-form__label" for="selfie">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="achievements-form__item">
+                      <input class="achievements-form__input" type="checkbox" checked name="burned-beach" id="beach">
+                      <label class="achievements-form__label" for="beach">Обгорел на пляже</label>
+                    </li>
+                    <li class="achievements-form__item">
+                      <input class="achievements-form__input" type="checkbox" name="saw-сhuck-norris" id="сhuck-norris">
+                      <label class="achievements-form__label" for="сhuck-norris">Видел Чака Норриса</label>
+                    </li>
+                    <li class="achievements-form__item">
+                      <input class="achievements-form__input" type="checkbox" name="buy-souvenirs" id="souvenirs">
+                      <label class="achievements-form__label" for="souvenirs">Накупил сувениров</label>
+                    </li>
+                    <li class="achievements-form__item">
+                      <input class="achievements-form__input" type="checkbox" name="keep-tower" id="tower">
+                      <label class="achievements-form__label" for="tower">Удержал башню</label>
+                    </li>
+                    <li class="achievements-form__item">
+                      <input class="achievements-form__input" type="checkbox" checked name="smash-hotel" id="hotel">
+                      <label class="achievements-form__label" for="hotel">Разгромил отель</label>
+                    </li>
+                  </ul>
+                </div>
+            <div class="contact-form">
+              <p class="contact-form__header">Контактная информация</p>
+                  <ul class="contact-form__list">
+                    <li class="contact-form__item contact-form__item--phone">
+                      <label class="contact-form__label" for="number">Номер телефона:</label>
+                      <input class="contact-form__input" type="tel" name="phone-number" id="number" placeholder="Номер, пожалуйста">
+                    </li>
+                    <li class="contact-form__item contact-form__item--mail">
+                      <label class="contact-form__label" for="email">Адрес почты</label>
+                      <input class="contact-form__input" type="email" name="email-address" id="email" placeholder="Введите почту *">
+                    </li>
+                  </ul>
+                </div>
+            <div class="attachment-form">
+                  <p class="attachment-form__header">C каким приложением путешествовали</p>
+                  <ul class="attachment-form__list">
+                    <li class="attachment-form__item">
+                      <input class="attachment-form__input" type="radio" name="attachment" checked value="pink-ios" id="pink-ios">
+                      <label class="attachment-form__label" for="pink-ios">Pink для iOS</label>
+                    </li>
+                    <li class="attachment-form__item">
+                      <input class="attachment-form__input" type="radio" name="attachment" value="pink-android" id="pink-android">
+                      <label class="attachment-form__label" for="pink-android">Pink на Android</label>
+                    </li>
+                    <li class="attachment-form__item">
+                      <input class="attachment-form__input" type="radio" name="attachment" value="windows-phone" id="windows-phone">
+                      <label class="attachment-form__label" for="windows-phone"> Windows Phone</label>
+                    </li>
+                  </ul>
+            </div>
           </div>
-          <div class="achievements-form">
-                <p class="achievements-form__header">Ваши безбашенные приключения</p>
-                <ul class="achievements-form__list">
-                  <li class="achievements-form__item">
-                    <input class="achievements-form__input" type="checkbox" checked name="selfie-shark" id="selfie">
-                    <label class="achievements-form__label" for="selfie">Сделал селфи с акулой</label>
-                  </li>
-                  <li class="achievements-form__item">
-                    <input class="achievements-form__input" type="checkbox" checked name="burned-beach" id="beach">
-                    <label class="achievements-form__label" for="beach">Обгорел на пляже</label>
-                  </li>
-                  <li class="achievements-form__item">
-                    <input class="achievements-form__input" type="checkbox" name="saw-сhuck-norris" id="сhuck-norris">
-                    <label class="achievements-form__label" for="сhuck-norris">Видел Чака Норриса</label>
-                  </li>
-                  <li class="achievements-form__item">
-                    <input class="achievements-form__input" type="checkbox" name="buy-souvenirs" id="souvenirs">
-                    <label class="achievements-form__label" for="souvenirs">Накупил сувениров</label>
-                  </li>
-                  <li class="achievements-form__item">
-                    <input class="achievements-form__input" type="checkbox" name="keep-tower" id="tower">
-                    <label class="achievements-form__label" for="tower">Удержал башню</label>
-                  </li>
-                  <li class="achievements-form__item">
-                    <input class="achievements-form__input" type="checkbox" checked name="smash-hotel" id="hotel">
-                    <label class="achievements-form__label" for="hotel">Разгромил отель</label>
-                  </li>
-                </ul>
-              </div>
-          <div class="contact-form">
-            <p class="contact-form__header">Контактная информация</p>
-                <ul class="contact-form__list">
-                  <li class="contact-form__item contact-form__item--phone">
-                    <label class="contact-form__label" for="number">Номер телефона:</label>
-                    <input class="contact-form__input" type="tel" name="phone-number" id="number" placeholder="Номер, пожалуйста">
-                  </li>
-                  <li class="contact-form__item contact-form__item--mail">
-                    <label class="contact-form__label" for="email">Адрес почты</label>
-                    <input class="contact-form__input" type="email" name="email-address" id="email" placeholder="Введите почту *">
-                  </li>
-                </ul>
-              </div>
-          <div class="attachment-form">
-                <p class="attachment-form__header">C каким приложением путешествовали</p>
-                <ul class="attachment-form__list">
-                  <li class="attachment-form__item">
-                    <input class="attachment-form__input" type="radio" name="attachment" checked value="pink-ios" id="pink-ios">
-                    <label class="attachment-form__label" for="pink-ios">Pink для iOS</label>
-                  </li>
-                  <li class="attachment-form__item">
-                    <input class="attachment-form__input" type="radio" name="attachment" value="pink-android" id="pink-android">
-                    <label class="attachment-form__label" for="pink-android">Pink на Android</label>
-                  </li>
-                  <li class="attachment-form__item">
-                    <input class="attachment-form__input" type="radio" name="attachment" value="windows-phone" id="windows-phone">
-                    <label class="attachment-form__label" for="windows-phone"> Windows Phone</label>
-                  </li>
-                </ul>
+          <div class="emotion-form">
+            <label class="emotion-form__label" for="user-comment">Опишите свои эмоции</label>
+            <textarea class="emotion-form__textarea" name="comment" id="user-comment">Можно прям в красках, не стесняясь в выражениях</textarea>
           </div>
-        </div>
-        <div class="emotion-form">
-          <label class="emotion-form__label" for="user-comment">Опишите свои эмоции</label>
-          <textarea class="emotion-form__textarea" name="comment" id="user-comment">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </div>
-        <div class="wrapper__form-button">
-          <button class="form__button" type="submit">Отправить форму</button>
-          <p class="form__asterisk">
-            <span class="form__asterisk-sign">*</span> <span class="form__asterisk-text">— Обязательные поля</span>
-          </p>
-        </div>
-    </form>
+          <div class="wrapper__form-button">
+            <button class="form__button" type="submit">Отправить форму</button>
+            <p class="form__asterisk">
+              <span class="form__asterisk-sign">*</span> <span class="form__asterisk-text">— Обязательные поля</span>
+            </p>
+          </div>
+      </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <!--        <picture>-->
+        <!--          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">-->
+        <!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
+        <!--        </picture>-->
+        <svg class="logo__footer-desktop" width="147" height="40">
+          <use xlink:href="/icons/sprite.svg#logotype-blue-desktop"></use>
+        </svg>
+        <svg class="logo__footer-tablet" width="145" height="40">
+          <use xlink:href="/icons/sprite.svg#logotype-blue-tablet"></use>
+        </svg>
+      </a>
+      <ul class="social-button">
+        <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
+      </ul>
+      <div class="wrapper__developed">
+        <span class="developed">Разработано</span>
+        <a class="developed__link" href="#"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
+      </div>
+    </footer>
+    <div class="pop-up pop-up--failure close">
+      <p class="pop-up__header">Что-то пошло
+        не так!</p>
+      <p class="pop-up__text pop-up__text--failure">Проверьте поля, выделенные
+        красным, скорее всего вы забыли
+        их заполнить</p>
+      <div class="wrapper__por-up-button wrapper__por-up-button--failure">
+        <button class="form__button">Ок</button>
+      </div>
     </div>
-  </main>
-  <footer class="page-footer">
-    <a class="page-footer__logo">
-      <!--        <picture>-->
-      <!--          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">-->
-      <!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
-      <!--        </picture>-->
-      <svg class="logo__footer-desktop" width="147" height="40">
-        <use xlink:href="/icons/sprite.svg#logotype-blue-desktop"></use>
-      </svg>
-      <svg class="logo__footer-tablet" width="145" height="40">
-        <use xlink:href="/icons/sprite.svg#logotype-blue-tablet"></use>
-      </svg>
-    </a>
-    <ul class="social-button">
-      <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
-      <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
-      <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
-    </ul>
-    <div class="wrapper__developed">
-      <span class="developed">Разработано</span>
-      <a class="developed__link" href="#"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
+    <div class="pop-up pop-up--success close">
+      <p class="pop-up__header">Ваша заявка
+        отправлена</p>
+      <p class="pop-up__text pop-up__text--success">Спасибо за ваше участие, ваша
+        заявка уже поступила к нам. В
+        ближайшее время мы рассмотрим
+        ее и оповестим вас.</p>
+      <div class="wrapper__por-up-button wrapper__por-up-button--success">
+        <button class="form__button">Закрыть окно</button>
+      </div>
     </div>
-  </footer>
-  <div class="pop-up pop-up--failure close">
-    <p class="pop-up__header">Что-то пошло
-      не так!</p>
-    <p class="pop-up__text pop-up__text--failure">Проверьте поля, выделенные
-      красным, скорее всего вы забыли
-      их заполнить</p>
-    <div class="wrapper__por-up-button wrapper__por-up-button--failure">
-      <button class="form__button">Ок</button>
-    </div>
-  </div>
-  <div class="pop-up pop-up--success close">
-    <p class="pop-up__header">Ваша заявка
-      отправлена</p>
-    <p class="pop-up__text pop-up__text--success">Спасибо за ваше участие, ваша
-      заявка уже поступила к нам. В
-      ближайшее время мы рассмотрим
-      ее и оповестим вас.</p>
-    <div class="wrapper__por-up-button wrapper__por-up-button--success">
-      <button class="form__button">Закрыть окно</button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

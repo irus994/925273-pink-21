@@ -50,7 +50,7 @@ exports.images = images;
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build/html"))
+    .pipe(gulp.dest("build"))
 }
 
 exports.html = html;
@@ -91,7 +91,8 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff,woff2}",
-    "source/img/**/*.{jpg,png,svg}"
+    "source/img/**/*.{jpg,png,svg}",
+    "source/icons/sprite.svg",
   ],
     {
       base: "source"
@@ -114,7 +115,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
