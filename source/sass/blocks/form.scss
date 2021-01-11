@@ -39,4 +39,17 @@
   padding: 23px 45px;
   border-radius: 2px;
 
+  &:hover {
+    background-color: #1C9B5E;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #E5E5E5;
+  }
+
  }

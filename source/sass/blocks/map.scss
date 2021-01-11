@@ -16,4 +16,32 @@
 
 .map__image {
   width: 100%;
+  margin-top: -35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -70px;
+  }
+}
+
+.map__angle {
+  display: flex;
+  height: 35px;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+
+  @media (min-width: $tablet-width) {
+    height: 70px;
+  }
+
+
+  &--left {
+    background: linear-gradient(to top right, transparent 50%, white 50%);
+    width: 50%;
+  }
+
+  &--right {
+    background: linear-gradient(to top left, transparent 50%, white 50%);
+    width: 50%;
+  }
 }

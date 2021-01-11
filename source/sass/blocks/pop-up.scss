@@ -9,7 +9,7 @@
   border-top: 1px solid rgba(0, 0, 0, 0.03);
   box-sizing: border-box;
 
-  &--success.close {
+  &--success.pop-up--close {
     display: none;
   }
 
@@ -36,7 +36,7 @@
       top: 1275px;
     }
   }
-  &--failure.close {
+  &--failure.pop-up--close {
     display: none;
   }
 

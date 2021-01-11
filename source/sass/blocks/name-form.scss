@@ -71,6 +71,17 @@
   box-sizing: border-box;
   border: 2px #E5E5E5 solid;
 
+  &:hover,
+  &:focus {
+    border: 2px #283645 solid;
+    outline: 0;
+  }
+
+  &:active {
+    border: 2px #D22856 solid;
+    outline: 0;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }

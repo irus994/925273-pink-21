@@ -4,36 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог приложения PINK</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body class="page__body">
 <header class="page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html" alt="Логотип компании PINK">
       <!--          <picture>-->
       <!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
       <!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
       <!--            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">-->
       <!--          </picture>-->
       <svg class="logo__header-desktop" width="147" height="40">
-        <use xlink:href="/icons/sprite-logo.svg#big-white-logo"></use>
+        <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
       </svg>
       <svg class="logo__header-tablet" width="145" height="40">
-        <use xlink:href="/icons/sprite-logo.svg#middle-white-logo"></use>
+        <use xlink:href="/icons/sprite.svg#logotype-white-tablet"></use>
       </svg>
       <svg class="logo__header-mobile" width="74" height="23">
-        <use xlink:href="/icons/sprite-logo.svg#small-white-logo"></use>
+        <use xlink:href="/icons/sprite.svg#pink"></use>
       </svg>
     </a>
     <nav class="main-nav main-nav--close">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>
     </nav>
   </div>
@@ -66,6 +66,7 @@
             <span class="catalog__banner-like">Нравится: 215</span>
           </div>
         </div>
+      </div>
     </article>
     <div class="catalog__wrapper">
       <ul class="catalog__list">
@@ -126,6 +127,7 @@
                 <p class="catalog__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <span class="catalog__user-like">Нравится: 215</span>
               </div>
+            </div>
           </article>
         </li>
         <li class="catalog__item">
@@ -219,8 +221,8 @@
             </li>
           </ul>
           <div class="catalog-form__range-wrapper">
-            <input class="catalog-form__range catalog-form__range--general" type="range" name="crop-tool" id="crop">
-            <label class="visually-hidden" for="crop">Обрезка</label>
+            <input class="catalog-form__range catalog-form__range--general" type="range" name="crop-tool" id="crop-general">
+            <label class="visually-hidden" for="crop-general">Обрезка</label>
           </div>
       </div>
         <div class="catalog-form__button-wrapper">
@@ -237,10 +239,10 @@
     <!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
     <!--        </picture>-->
     <svg class="logo__footer-desktop" width="147" height="40">
-      <use xlink:href="/icons/sprite-logo.svg#big-blue-logo"></use>
+      <use xlink:href="/icons/sprite.svg#logotype-blue-desktop"></use>
     </svg>
     <svg class="logo__footer-tablet" width="145" height="40">
-      <use xlink:href="/icons/sprite-logo.svg#middle-blue-logo"></use>
+      <use xlink:href="/icons/sprite.svg#logotype-blue-tablet"></use>
     </svg>
   </a>
   <ul class="social-button">
@@ -250,7 +252,7 @@
   </ul>
   <div class="wrapper__developed">
     <span class="developed">Разработано</span>
-    <a class="developed__link" href="#"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
+    <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
   </div>
 </footer>
 </body>

@@ -1,7 +1,7 @@
 
 .contact {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 74px;
@@ -32,6 +32,15 @@
   color: #D22856;
   text-decoration: none;
 
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 40px;
     padding-right: 40px;
@@ -52,4 +61,13 @@
   font-size: 24px;
   color: #D22856;
   margin: 0;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+  }
 }

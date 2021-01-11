@@ -244,6 +244,20 @@
   border-radius: 30px;
   margin: 6px;
 
+  &:hover {
+    background-color: #ffffff;
+    color: #283645;
+    border: 3px #283645 solid;
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: #283645;
+    color: #ffffff;
+    border: 3px #283645 solid;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     height: 55px;
     width: 260px;
@@ -260,5 +274,17 @@
     border: 3px solid #d22856;
     color: #d22856;
     opacity: 1;
+
+    &:hover {
+      background-color: #D22856;
+      color: #ffffff;
+      border: 3px solid #D22856;
+      opacity: 1;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      border: 3px solid #D22856;
+    }
   }
 }
