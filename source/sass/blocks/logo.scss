@@ -1,19 +1,4 @@
 
-//.logo {
-//  width: 74px;
-//  height: 100%;
-//
-//  @media (min-width: $tablet-width) {
-//    height: 40px;
-//    width: 145px;
-//  }
-//
-//  @media (min-width: $desktop-width) {
-//    width: 147px;
-//    height: 40px;
-//  }
-//}
-
 .logo__header-mobile {
   display: block;
 
@@ -45,6 +30,10 @@
 .logo__footer-tablet {
   display: block;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -55,5 +44,9 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

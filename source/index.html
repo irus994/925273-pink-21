@@ -12,11 +12,6 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo logo">
-<!--          <picture>-->
-<!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
-<!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
-<!--            <img class="page-header__image" src="img/pink.svg" alt="Логотип приложения PINK">-->
-<!--          </picture>-->
             <svg class="logo__header-desktop" width="147" height="40">
               <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
             </svg>
@@ -30,10 +25,10 @@
         <nav class="main-nav main-nav--close">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
           </ul>
         </nav>
       </div>
@@ -46,14 +41,14 @@
           </div>
           <h1 class="visually-hidden">Приложение PINK</h1>
           <div class="download-button__wrapper">
-            <button class="download-button">
+            <a class="download-button" href="https://www.apple.com/ru/app-store/" alt="Скачать приложение PINK">
               Скачать приложение
-            </button>
+            </a>
           </div>
           <ul class="download-block__systems-list">
-            <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--ios" href="#"><span class="visually-hidden">iOS</span></a></li>
-            <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--android" href="#"><span class="visually-hidden">Android</span></a></li>
-            <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--windows" href="#"><span class="visually-hidden">Windows</span></a></li>
+            <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--ios" href="https://www.apple.com/ru/app-store/"><span class="visually-hidden">iOS</span></a></li>
+            <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--android" href="https://play.google.com/store/apps?hl=ru&gl=US"><span class="visually-hidden">Android</span></a></li>
+            <li class="download-block__systems-item"><a class="download-block__systems-link download-block__systems-link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"><span class="visually-hidden">Windows</span></a></li>
           </ul>
           <p class="download-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -65,6 +60,7 @@
           <p class="tagline__text">Устали от серости мегаполиса?</p>
           <p class="tagline__text">Нам есть, что вам <br>предложить!</p>
         </section>
+        <div class="background-angle"></div>
         <section class="advantages">
             <h2 class="visually-hidden">Преимущества приложения PINK</h2>
             <ul class="advantages__list">
@@ -135,6 +131,7 @@
             <li class="dots__items"></li>
           </ul>
         </section>
+        <div class="background-angle background-angle--offers"></div>
         <section class="offers">
           <h2 class="visually-hidden">Предложения</h2>
           <table class="offers__table">
@@ -196,6 +193,10 @@
           </div>
         </section>
         <div class="map">
+          <div class="map__angle">
+            <div class="map__angle map__angle--left"></div>
+            <div class="map__angle map__angle--right"></div>
+          </div>
           <picture>
             <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 960px)" srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">
@@ -227,7 +228,7 @@
       </ul>
       <div class="wrapper__developed">
         <span class="developed">Разработано</span>
-        <a class="developed__link" href="#"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
       </div>
     </footer>
   </body>

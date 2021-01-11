@@ -11,7 +11,7 @@
   <body class="page__body">
     <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html" alt="Логотип компании PINK">
         <!--          <picture>-->
         <!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
         <!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
@@ -32,8 +32,8 @@
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
     </div>
@@ -160,10 +160,10 @@
       </ul>
       <div class="wrapper__developed">
         <span class="developed">Разработано</span>
-        <a class="developed__link" href="#"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
       </div>
     </footer>
-    <div class="pop-up pop-up--failure close">
+    <div class="pop-up pop-up--failure pop-up--close">
       <p class="pop-up__header">Что-то пошло
         не так!</p>
       <p class="pop-up__text pop-up__text--failure">Проверьте поля, выделенные
@@ -173,7 +173,7 @@
         <button class="form__button">Ок</button>
       </div>
     </div>
-    <div class="pop-up pop-up--success close">
+    <div class="pop-up pop-up--success pop-up--close">
       <p class="pop-up__header">Ваша заявка
         отправлена</p>
       <p class="pop-up__text pop-up__text--success">Спасибо за ваше участие, ваша

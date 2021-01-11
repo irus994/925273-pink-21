@@ -1,17 +1,22 @@
 
 .page-header {
-  position: absolute;
-  background-color: rgba(29, 38, 49, 0.7);
+  position: relative;
+  background-color: rgba(29, 38, 49, 1);
   margin-bottom: -66px;
   z-index: 100;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -110px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: auto;
-    margin-bottom: -66px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -110px;
   }
 }
 

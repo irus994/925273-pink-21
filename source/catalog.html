@@ -11,7 +11,7 @@
 <body class="page__body">
 <header class="page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html" alt="Логотип компании PINK">
       <!--          <picture>-->
       <!--            <source srcset="img/logotype-white-tablet.svg" media="(min-width: 660px ) and (max-width: 959px)">-->
       <!--            <source srcset="img/logotype-white-desktop.svg" media="(min-width: 960px)">-->
@@ -31,9 +31,9 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>
     </nav>
   </div>
@@ -66,6 +66,7 @@
             <span class="catalog__banner-like">Нравится: 215</span>
           </div>
         </div>
+      </div>
     </article>
     <div class="catalog__wrapper">
       <ul class="catalog__list">
@@ -126,6 +127,7 @@
                 <p class="catalog__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                 <span class="catalog__user-like">Нравится: 215</span>
               </div>
+            </div>
           </article>
         </li>
         <li class="catalog__item">
@@ -219,8 +221,8 @@
             </li>
           </ul>
           <div class="catalog-form__range-wrapper">
-            <input class="catalog-form__range catalog-form__range--general" type="range" name="crop-tool" id="crop">
-            <label class="visually-hidden" for="crop">Обрезка</label>
+            <input class="catalog-form__range catalog-form__range--general" type="range" name="crop-tool" id="crop-general">
+            <label class="visually-hidden" for="crop-general">Обрезка</label>
           </div>
       </div>
         <div class="catalog-form__button-wrapper">
@@ -250,7 +252,7 @@
   </ul>
   <div class="wrapper__developed">
     <span class="developed">Разработано</span>
-    <a class="developed__link" href="#"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
+    <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
   </div>
 </footer>
 </body>
