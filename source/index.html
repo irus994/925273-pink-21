@@ -22,7 +22,9 @@
               <use xlink:href="/icons/sprite.svg#pink"></use>
             </svg>
         </a>
-        <nav class="main-nav main-nav--close">
+<!--        для отображения мобильного меню к тегу <nav> добавляется класс main-nav&#45;&#45;close (начальное состояние - меню закрыто) и удаляется класс
+класс js-none (по умолчанию включен)  используется для отображения меню при отсутствии JS-->
+        <nav class="main-nav js-none">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
@@ -60,7 +62,7 @@
           <p class="tagline__text">Устали от серости мегаполиса?</p>
           <p class="tagline__text">Нам есть, что вам <br>предложить!</p>
         </section>
-        <div class="background-angle"></div>
+        <div class="main__background-angle main__background-angle--advantages"></div>
         <section class="advantages">
             <h2 class="visually-hidden">Преимущества приложения PINK</h2>
             <ul class="advantages__list">
@@ -110,7 +112,7 @@
               <img class="hours-24__image" src="img/hours-24-tablet.svg" alt="таймер 24 часа">
             </picture>
             <div class="wrapper__hours-24-text">
-              <h2 class="hours-24__header">Эффект на 24 часа!</h2>
+              <h2 class="hours-24__header">Эффект &nbsp;<br> на 24 часа!</h2>
               <p class="hours-24__text">Британские ученые провели исследования <br>и доказали, что положительный эффект от <br>использования приложения длится <br>целые сутки!</p>
               <p class="hours-24__text"><a class="hours-24__link" href="#">Узнать больше об исследовании</a></p>
             </div>
@@ -131,7 +133,7 @@
             <li class="dots__items"></li>
           </ul>
         </section>
-        <div class="background-angle background-angle--offers"></div>
+        <div class="main__background-angle main__background-angle--offers"></div>
         <section class="offers">
           <h2 class="visually-hidden">Предложения</h2>
           <table class="offers__table">
@@ -197,14 +199,16 @@
             <div class="map__angle map__angle--left"></div>
             <div class="map__angle map__angle--right"></div>
           </div>
-          <picture>
-            <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 960px)" srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-image-mobile.webp 1x, img/map-image-mobile@2x.webp 2x">
-            <source srcset="img/map-image-tablet.jpg 1x, img/map-image-tablet@2x.jpg 2x" media="(min-width: 660px) and (max-width: 959px)">
-            <source srcset="img/map-image-desktop.jpg 1x, img/map-image-desktop@2x.jpg 2x" media="(min-width: 960px)">
-            <img class="map__image" src="img/map-image-mobile.jpg" srcset="img/map-image-mobile@2x.jpg 2x" alt="Карта с расположением компании">
-          </picture>
+          <iframe class="map__image" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8cb9d4fe36b19a59354750d31b4ce48c82451e70fda71377019b96cee9d92fd9&amp;source=constructor" width="100%" height="374" frameborder="0">
+          </iframe>
+<!--          <picture>-->
+<!--            <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/map-image-tablet.webp 1x, img/map-image-tablet@2x.webp 2x">-->
+<!--            <source type="image/webp" media="(min-width: 960px)" srcset="img/map-image-desktop.webp 1x, img/map-image-desktop@2x.webp 2x">-->
+<!--            <source type="image/webp" srcset="img/map-image-mobile.webp 1x, img/map-image-mobile@2x.webp 2x">-->
+<!--            <source srcset="img/map-image-tablet.jpg 1x, img/map-image-tablet@2x.jpg 2x" media="(min-width: 660px) and (max-width: 959px)">-->
+<!--            <source srcset="img/map-image-desktop.jpg 1x, img/map-image-desktop@2x.jpg 2x" media="(min-width: 960px)">-->
+<!--            <img class="map__image" src="img/map-image-mobile.jpg" srcset="img/map-image-mobile@2x.jpg 2x" alt="Карта с расположением компании">-->
+<!--          </picture>-->
     </div>
     </main>
     <footer class="page-footer">

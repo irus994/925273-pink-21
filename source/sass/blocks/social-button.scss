@@ -1,7 +1,7 @@
 .social-button {
   list-style: none;
   display: flex;
-  padding-top: 34px;
+  padding-top: 30px;
   padding-bottom: 34px;
   padding-left: 0;
   margin: auto;
@@ -17,7 +17,7 @@
 .social-button__item {
   border: 3px rgba(16%, 21%, 27%, 0.1) solid;
   border-radius: 50%;
-  margin: 7px;
+  margin: 5px;
 
   &:hover {
     border: 3px #283645 solid;

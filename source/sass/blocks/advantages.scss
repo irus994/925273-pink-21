@@ -12,6 +12,7 @@
     flex-direction: row-reverse;
     text-align: left;
     box-sizing: border-box;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +26,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    padding-left: 58px;
+    padding-left: 44px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +51,7 @@
   line-height: 24px;
   font-weight: bold;
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 22px;
 }
 
 .advantages__text {
@@ -64,10 +66,6 @@
     display: block;
     width: 252px;
   }
-}
-
-.advantages__picture {
-
 }
 
 .advantages__picture-list {
@@ -98,12 +96,10 @@
   }
 }
 
-
-
 .advantages__image {
 
-  @media (min-width: $desktop-width) {
-
+  @media (min-width: $tablet-width) {
+    margin-top: -75px;
   }
 
 }

@@ -11,7 +11,7 @@
 <body class="page__body">
 <header class="page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo" href="index.html" alt="Логотип компании PINK">
+    <a class="page-header__logo logo">
       <svg class="logo__header-desktop" width="147" height="40">
         <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
       </svg>
@@ -22,11 +22,13 @@
         <use xlink:href="/icons/sprite.svg#pink"></use>
       </svg>
     </a>
-    <nav class="main-nav main-nav--close">
+    <!--        для отображения мобильного меню к тегу <nav> добавляется класс main-nav&#45;&#45;close (начальное состояние - меню закрыто) и удаляется класс
+    класс js-none (по умолчанию включен)  используется для отображения меню при отсутствии JS-->
+    <nav class="main-nav js-none">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>

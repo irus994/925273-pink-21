@@ -1,6 +1,11 @@
+.logo:hover
+.logo__header-mobile {
+    fill: #d22856;
+}
 
 .logo__header-mobile {
   display: block;
+  fill: #d22856;
 
   @media (min-width: $tablet-width) {
     display: none;
