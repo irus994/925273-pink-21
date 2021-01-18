@@ -2,6 +2,7 @@
 .name-form {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
   order: 1;
   display: block;
   background-color: #ffffff;
@@ -28,7 +29,7 @@
     height: 297px;
     margin: 0;
     width: 431px;
-    padding-top: 20px;
+    padding-top: 27px;
     box-sizing: border-box;
   }
 }
@@ -36,12 +37,17 @@
 .name-form__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 29px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    padding-bottom: 55px;
+
+    &:last-child {
+      padding-bottom: 30px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -50,17 +56,17 @@
 }
 
 .name-form__label {
-  color: #D22856;
+  color: #d22856;
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 23px;
-  padding-bottom: 17px;
-  line-height: 60px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  line-height: 30px;
+
 
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
-    padding-left: 0;
-    padding-bottom: 0;
+    padding: 0 20px 0 0;
   }
 }
 
@@ -69,7 +75,7 @@
   font-size: 18px;
   padding: 23px 20px;
   box-sizing: border-box;
-  border: 2px #E5E5E5 solid;
+  border: 2px #e5e5e5 solid;
 
   &:hover,
   &:focus {
@@ -78,7 +84,7 @@
   }
 
   &:active {
-    border: 2px #D22856 solid;
+    border: 2px #d22856 solid;
     outline: 0;
   }
 

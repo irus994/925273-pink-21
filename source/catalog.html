@@ -1,254 +1,293 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Каталог приложения PINK</title>
-  <link rel="stylesheet" href="/css/style.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<!--  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">-->
-</head>
-<body class="page__body">
-<header class="page-header">
-  <div class="page-header__wrapper">
-    <a class="page-header__logo" href="index.html" alt="Логотип компании PINK">
-      <svg class="logo__header-desktop" width="147" height="40">
-        <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог приложения PINK</title>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  </head>
+  <body class="page-body">
+  <!--  Класс page-header--open добавляется к элементу page-header при раскрывании мобильного меню, -->
+  <!--  для удаления прозрачности с данного блока (в соответсвии с макетом) Включен по умолчанию -->
+  <!--  для работы мобильного меню без JS, а также при открытии мобильного меню классом main-nav--open-->
+  <header class="page-header page-header--open">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo logo" href="/index.html">
+        <svg class="logo__header-desktop" width="147" height="40">
+          <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
+        </svg>
+        <svg class="logo__header-tablet" width="145" height="40">
+          <use xlink:href="/icons/sprite.svg#logotype-white-tablet"></use>
+        </svg>
+        <svg class="logo__header-mobile" width="74" height="23">
+          <use xlink:href="/icons/sprite.svg#pink"></use>
+        </svg>
+      </a>
+  <!--    Класс js-none используется по умолчанию для работы мобильного меню без JS.-->
+  <!--    При наличии работающего JS js-none удаляется из <nav>&ndash;&gt;-->
+  <!--    Мобильное меню (при условии работающего JS) открывается удалением класса main-nav&#45;&#45;close, закрывается удалением этого класса-->
+      <nav class="main-nav js-none">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <section class="catalog-header">
+      <div class="wrapper__header">
+        <h1 class="catalog-header__header">Фотографии пользователей</h1>
+      </div>
+    </section>
+    <main class="catalog">
+      <div class="preview-catalog-text">
+        <p class="preview-catalog-text__text">Взгляните на фотографии, которые</br> &nbsp; выкладывают пользователи! </br> &nbsp;
+        Видите, как не хватает ваших?</p>
+      </div>
+      <article class="catalog__banner">
+        <a href="img/panorama-desktop@2x.jpg" alt="Панорама в полном размере">
+          <picture class="catalog__banner-image">
+            <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
+
+            <source srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
+            <source srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
+            <img class="catalog__banner-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+          </picture>
+        </a>
+        <div class="wrapper__banner">
+          <div class="wrapper__banner-text">
+            <span class="catalog__banner-user">Анна</span> <span class="catalog__banner-time">(5 минут назад)</span>
+            <div class="wrapper__banner-column">
+              <p class="catalog__banner-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <span class="catalog__banner-like">Нравится: 215</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="catalog__wrapper">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <a href="img/photo-1-desktop@2x.jpg" alt="Фото №1 в полном размере">
+                <picture class="catalog__image">
+                  <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+
+                  <source srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
+                  <source srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                  <img class="catalog__image-img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <div class="wrapper__user-text">
+                <span class="catalog__user">Левон</span> <span class="catalog__user-time">(5 часов назад)</span>
+                <div class="wrapper__like-column">
+                  <p class="catalog__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="catalog__user-like">Нравится: 356</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <a href="img/photo-2-desktop@2x.jpg" alt="Фото №2 в полном размере">
+                <picture class="catalog__image">
+                  <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
+                  <source srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
+                  <source srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                  <img class="catalog__image-img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <div class="wrapper__user-text">
+                <span class="catalog__user">Антон</span> <span class="catalog__user-time">(12 часов назад)</span>
+                <div class="wrapper__like-column">
+                  <p class="catalog__user-text">Соседи будут рады!</p>
+                  <span class="catalog__user-like">Нравится: 666</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <a href="img/photo-3-desktop@2x.jpg" alt="Фото №3 в полном размере">
+                <picture class="catalog__image">
+                  <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
+
+                  <source srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
+                  <source srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                  <img class="catalog__image-img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <div class="wrapper__user-text">
+                <span class="catalog__user">Борис</span> <span class="catalog__user-time">(20 часов назад)</span>
+                <div class="wrapper__like-column">
+                  <p class="catalog__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <span class="catalog__user-like">Нравится: 215</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <a href="img/photo-4-desktop@2x.jpg" alt="Фото №4 в полном размере">
+                <picture class="catalog__image">
+                  <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
+                  <source srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
+                  <source srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                  <img class="catalog__image-img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <div class="wrapper__user-text">
+                <span class="catalog__user">Сергей</span> <span class="catalog__user-time">(25 часов назад)</span>
+                <div class="wrapper__like-column">
+                  <p class="catalog__user-text">Самая кубанская в мире!</p>
+                  <span class="catalog__user-like">Нравится: 4</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <a href="img/photo-5-desktop@2x.jpg" alt="Фото №5 в полном размере">
+                <picture class="catalog__image">
+                  <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
+
+                  <source srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
+                  <source srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                  <img class="catalog__image-img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <div class="wrapper__user-text">
+                <span class="catalog__user">Максим</span> <span class="catalog__user-time">(40 часов назад)</span>
+                <div class="wrapper__like-column">
+                  <p class="catalog__user-text">Где снег-то?</p>
+                  <span class="catalog__user-like">Нравится: 150</span>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <a href="img/photo-6-desktop@2x.jpg" alt="Фото №6 в полном размере">
+                <picture class="catalog__image">
+                  <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
+
+                  <source srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
+                  <source srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                  <img class="catalog__image-img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
+              <div class="wrapper__user-text">
+                <span class="catalog__user">Надежда</span> <span class="catalog__user-time">(45 часов назад)</span>
+                <div class="wrapper__like-column">
+                  <p class="catalog__user-text">Всем GM и взаимные лайки!</p>
+                  <span class="catalog__user-like">Нравится: 2560</span>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+      <div class="end-catalog-text">
+        <p class="end-catalog-text__text">Затмите их всех! </br>Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+      <form class="catalog-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="catalog-form__column-left">
+          <input class="catalog-form__input" type="file" id="photo" name="user-photo">
+          <label class="visually-hidden" for="photo">Загрузка картинки</label>
+        </div>
+        <div class="catalog-form__column-right">
+          <div class="catalog-form__tools-wrapper">
+            <ul class="catalog-form__tools">
+              <li class="catalog-form__item-wrapper">
+                <div class="catalog-form__item  catalog-form__item--active">
+                  <svg class="catalog-form__tools-item catalog-form__tools-item--mobile-desktop">
+                    <use xlink:href="/icons/sprite.svg#tool-crop-mobile-desktop"></use>
+                  </svg>
+                  <svg class="catalog-form__tools-item catalog-form__tools-item--tablet">
+                    <use xlink:href="/icons/sprite.svg#tool-crop-mobile-desktop"></use>
+                  </svg>
+                </div>
+                <input class="catalog-form__range catalog-form__range--crop" type="range" name="crop-tool" id="crop">
+                <label class="visually-hidden" for="crop">Обрезка</label>
+              </li>
+              <li class="catalog-form__item-wrapper">
+                <div class="catalog-form__item">
+                  <svg class="catalog-form__tools-item catalog-form__tools-item--mobile-desktop">
+                    <use xlink:href="/icons/sprite.svg#tool-fill-mobile-desktop"></use>
+                  </svg>
+                  <svg class="catalog-form__tools-item catalog-form__tools-item--tablet">
+                    <use xlink:href="/icons/sprite.svg#tool-fill-mobile-desktop"></use>
+                  </svg>
+                </div>
+                <input class="catalog-form__range catalog-form__range--fill" type="range" name="fill-tool" id="fill">
+                <label class="visually-hidden" for="fill">Заливка</label>
+              </li>
+              <li class="catalog-form__item-wrapper">
+                <div class="catalog-form__item">
+                  <svg class="catalog-form__tools-item catalog-form__tools-item--mobile-desktop">
+                    <use xlink:href="/icons/sprite.svg#tool-contrast-mobile-desktop"></use>
+                  </svg>
+                  <svg class="catalog-form__tools-item catalog-form__tools-item--tablet">
+                    <use xlink:href="/icons/sprite.svg#tool-contrast-mobile-desktop"></use>
+                  </svg>
+                </div>
+                <input class="catalog-form__range catalog-form__range--contrast" type="range" name="contrast-tool" id="contrast">
+                <label class="visually-hidden" for="contrast">Контраст</label>
+              </li>
+            </ul>
+            <div class="catalog-form__range-wrapper">
+              <input class="catalog-form__range catalog-form__range--general" type="range" name="crop-tool" id="general">
+              <label class="visually-hidden" for="general">Общий</label>
+            </div>
+        </div>
+          <div class="catalog-form__button-wrapper">
+            <button class="catalog-form__button catalog-form__button--active" type="submit">Запостить</button>
+            <button class="catalog-form__button" type="reset">Отмена</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo logo">
+      <svg class="logo__footer-desktop" width="147" height="40">
+        <use xlink:href="/icons/sprite.svg#logotype-blue-desktop"></use>
       </svg>
-      <svg class="logo__header-tablet" width="145" height="40">
-        <use xlink:href="/icons/sprite.svg#logotype-white-tablet"></use>
-      </svg>
-      <svg class="logo__header-mobile" width="74" height="23">
-        <use xlink:href="/icons/sprite.svg#pink"></use>
+      <svg class="logo__footer-tablet" width="145" height="40">
+        <use xlink:href="/icons/sprite.svg#logotype-blue-tablet"></use>
       </svg>
     </a>
-    <nav class="main-nav main-nav--close">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-  <section class="form-header">
-    <div class="wrapper__header">
-      <h1 class="form-header__header">Фотографии пользователей</h1>
+    <ul class="social-button">
+      <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+      <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+      <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
+    </ul>
+    <div class="wrapper__developed">
+      <span class="developed">Разработано</span>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Разработано HTML Academy">
+        <svg class="developed__image" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
+        </svg>
+      </a>
     </div>
-  </section>
-  <main class="catalog">
-    <div class="preview-text">
-      <p class="preview-text__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
-      <p class="preview-text__text">Видите, как не хватает ваших?</p>
-    </div>
-    <article class="catalog__banner">
-      <picture class="catalog__banner-image">
-        <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
-        <source type="image/webp" srcset="img/panorama-mobile.webp 1x, img/panorama-mobile@2x.webp 2x">
-
-        <source srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
-        <source srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
-        <img class="catalog__banner-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
-      </picture>
-      <div class="wrapper__banner">
-        <div class="wrapper__banner-text">
-          <span class="catalog__banner-user">Анна</span> <span class="catalog__banner-time">(5 минут назад)</span>
-          <div class="wrapper__banner-column">
-            <p class="catalog__banner-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <span class="catalog__banner-like">Нравится: 215</span>
-          </div>
-        </div>
-      </div>
-    </article>
-    <div class="catalog__wrapper">
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <picture class="catalog__image">
-              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
-
-              <source srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
-              <source srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" media="(min-width: 960px)">
-              <img class="catalog__image-img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Фото пользователя">
-            </picture>
-            <div class="wrapper__user-text">
-              <span class="catalog__user">Левон</span> <span class="catalog__user-time">(5 часов назад)</span>
-              <div class="wrapper__like-column">
-                <p class="catalog__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <span class="catalog__user-like">Нравится: 356</span>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <picture class="catalog__image">
-              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
-
-              <source srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
-              <source srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" media="(min-width: 960px)">
-              <img class="catalog__image-img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Фото пользователя">
-            </picture>
-            <div class="wrapper__user-text">
-              <span class="catalog__user">Антон</span> <span class="catalog__user-time">12 часов назад</span>
-              <div class="wrapper__like-column">
-                <p class="catalog__user-text">Соседи будут рады!</p>
-                <span class="catalog__user-like">Нравится: 666</span>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <picture class="catalog__image">
-              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
-
-              <source srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
-              <source srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" media="(min-width: 960px)">
-              <img class="catalog__image-img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Фото пользователя">
-            </picture>
-            <div class="wrapper__user-text">
-              <span class="catalog__user">Борис</span> <span class="catalog__user-time">20 часов назад</span>
-              <div class="wrapper__like-column">
-                <p class="catalog__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <span class="catalog__user-like">Нравится: 215</span>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <picture class="catalog__image">
-              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
-
-              <source srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
-              <source srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" media="(min-width: 960px)">
-              <img class="catalog__image-img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Фото пользователя">
-            </picture>
-            <div class="wrapper__user-text">
-              <span class="catalog__user">Сергей</span> <span class="catalog__user-time">(25 часов назад)</span>
-              <div class="wrapper__like-column">
-                <p class="catalog__user-text">Самая кубанская в мире!</p>
-                <span class="catalog__user-like">Нравится: 4</span>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <picture class="catalog__image">
-              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-5-mobile.webp 1x, img/photo-5-mobile@2x.webp 2x">
-
-              <source srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
-              <source srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x" media="(min-width: 960px)">
-              <img class="catalog__image-img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Фото пользователя">
-            </picture>
-            <div class="wrapper__user-text">
-              <span class="catalog__user">Максим</span> <span class="catalog__user-time">40 часов назад</span>
-              <div class="wrapper__like-column">
-                <p class="catalog__user-text">Где снег-то?</p>
-                <span class="catalog__user-like">Нравится: 150</span>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="catalog__item">
-          <article class="catalog__card">
-            <picture class="catalog__image">
-              <source type="image/webp" media="(min-width: 660px) and (max-width: 959px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-6-mobile.webp 1x, img/photo-6-mobile@2x.webp 2x">
-
-              <source srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x" media="(min-width: 660px ) and (max-width: 959px)">
-              <source srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x" media="(min-width: 960px)">
-              <img class="catalog__image-img" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Фото пользователя">
-            </picture>
-            <div class="wrapper__user-text">
-              <span class="catalog__user">Надежда</span> <span class="catalog__user-time">45 часов назад</span>
-              <div class="wrapper__like-column">
-                <p class="catalog__user-text">Всем GM и взаимные лайки!</p>
-                <span class="catalog__user-like">Нравится: 2560</span>
-              </div>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <div class="end-text">
-      <p class="end-text__text">Затмите их всех!</p>
-      <p class="end-text__text">Выкладывайте все, что накопилось в телефоне!</p>
-    </div>
-    <form class="catalog-form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="catalog-form__column-left">
-      <input class="catalog-form__input" type="file" id="photo" name="user-photo">
-      <label class="visually-hidden" for="photo">Загрузка картинки</label>
-     </div>
-      <div class="catalog-form__column-right">
-        <div class="catalog-form__tools-wrapper">
-          <ul class="catalog-form__tools">
-            <li class="catalog-form__item-wrapper">
-              <span class="catalog-form__tools-item catalog-form__tools-item--crop"></span>
-              <input class="catalog-form__range catalog-form__range--crop" type="range" name="crop-tool" id="crop">
-              <label class="visually-hidden" for="crop">Обрезка</label>
-            </li>
-            <li class="catalog-form__item-wrapper">
-              <span class="catalog-form__tools-item catalog-form__tools-item--fill"></span>
-              <input class="catalog-form__range catalog-form__range--fill" type="range" name="fill-tool" id="fill">
-              <label class="visually-hidden" for="fill">Заливка</label>
-            </li>
-            <li class="catalog-form__item-wrapper">
-              <span class="catalog-form__tools-item catalog-form__tools-item--contrast"></span>
-              <input class="catalog-form__range catalog-form__range--contrast" type="range" name="contrast-tool" id="contrast">
-              <label class="visually-hidden" for="contrast">Выбрать</label>
-            </li>
-          </ul>
-          <div class="catalog-form__range-wrapper">
-            <input class="catalog-form__range catalog-form__range--general" type="range" name="crop-tool" id="crop-general">
-            <label class="visually-hidden" for="crop-general">Обрезка</label>
-          </div>
-      </div>
-        <div class="catalog-form__button-wrapper">
-          <button class="catalog-form__button catalog-form__button--active" type="submit">Запостить</button>
-          <button class="catalog-form__button" type="reset">Отмена</button>
-        </div>
-      </div>
-    </form>
-  </main>
-<footer class="page-footer">
-  <a class="page-footer__logo">
-    <!--        <picture>-->
-    <!--          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">-->
-    <!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
-    <!--        </picture>-->
-    <svg class="logo__footer-desktop" width="147" height="40">
-      <use xlink:href="/icons/sprite.svg#logotype-blue-desktop"></use>
-    </svg>
-    <svg class="logo__footer-tablet" width="145" height="40">
-      <use xlink:href="/icons/sprite.svg#logotype-blue-tablet"></use>
-    </svg>
-  </a>
-  <ul class="social-button">
-    <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
-    <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
-    <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
-  </ul>
-  <div class="wrapper__developed">
-    <span class="developed">Разработано</span>
-    <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
-  </div>
-</footer>
-</body>
+  </footer>
+  </body>
 </html>

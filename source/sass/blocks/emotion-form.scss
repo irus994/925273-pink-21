@@ -4,27 +4,27 @@
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 42px;
+  padding-top: 35px;
 
   @media (min-width: $tablet-width) {
-    border: 2px #E5E5E5 solid;
+    border: 2px #e5e5e5 solid;
     padding: 47px 60px 53px 60px;
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 213px;
+    max-height: 216px;
     box-sizing: border-box;
-    margin-top: 69px;
+    margin-top: 65px;
+    margin-bottom: 5px;
   }
 }
 
 .emotion-form__label {
-  color: #D22856;
+  color: #d22856;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
-  padding-right: 42px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -38,14 +38,16 @@
 }
 
 .emotion-form__textarea {
-  height: 197px;
-  margin-top: 22px;
-  border: 2px #E5E5E5 solid;
+  height: 200px;
+  margin-top: 18px;
+  border: 2px #e5e5e5 solid;
   border-radius: 2px;
-  padding: 20px;
+  line-height: 30px;
+  padding: 15px 20px 20px 20px;
   color: #283645;
   font-size: 18px;
-  //font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 
   &:hover {
     border: 2px #283645 solid;
@@ -53,11 +55,19 @@
   }
 
   &:active {
-    border: 2px #D22856 solid;
+    border: 2px #d22856 solid;
     outline: 0;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 20px;
+    margin-top: 25px;
+    padding-right: 15px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+    padding-right: 14px;
+    min-height: 126px;
   }
 }

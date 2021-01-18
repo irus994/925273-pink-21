@@ -3,9 +3,23 @@
   font-size: 14px;
   line-height: 18px;
 
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+  }
 }
 
 .developed__image {
   padding-left: 15px;
-}
+  fill: #d22856;
 
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}

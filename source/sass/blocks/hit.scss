@@ -11,11 +11,11 @@
     text-transform: uppercase;
     line-height: 30px;
     transform: rotate(-45deg);
-    top: 4px;
+    top: -8px;
     left: 13px;
 
     @media (min-width: $tablet-width) and (max-width: 959px) {
-      top: 10px;
+      top: 0;
       left: 7px;
     }
   }
@@ -23,13 +23,12 @@
 
 .hit__image {
   position: absolute;
-  top: -11px;
+  top: -21px;
   left: -2px;
 
   @media (min-width: $tablet-width) and (max-width: 959px) {
     height: 61px;
     width: 61px;
-    top: 0;
+    top: -11px;
   }
 }
-

@@ -5,6 +5,31 @@
   background-color: #ffffff;
 }
 
-.main__image-iphone {
+.main__background-angle {
+  width: 100%;
+  background: linear-gradient(to bottom right, white 50%, #f2f2f2 50%);
 
+  &--advantages {
+    height: 35px;
+
+    @media (min-width: $tablet-width) {
+      height: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 90px;
+    }
+  }
+
+  &--offers {
+    height: 20px;
+
+    @media (min-width: $tablet-width) {
+      height: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 90px;
+    }
+  }
 }

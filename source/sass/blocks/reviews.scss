@@ -1,7 +1,7 @@
 
 .reviews {
   text-align: center;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 35px 20px;
   background-color: #ffffff;
   display: block;
   margin-right: auto;
@@ -11,12 +11,14 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-top: 109px;
+    margin-top: 80px;
     padding-top: 0;
+    padding-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 896px;
+    padding-bottom: 0;
   }
 }
 
@@ -35,12 +37,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 38px;
     margin-top: 135px;
   }
 
   &::before {
-
     @media (min-width: $desktop-width) {
       content: "";
       display: block;
@@ -62,7 +63,11 @@
     font-size: 14px;
     line-height: 30px;
     margin: 0;
-    padding-bottom: 49px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -74,6 +79,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 
@@ -89,7 +98,6 @@
   }
 
   &::before {
-
     @media (min-width: $desktop-width) {
       content: "";
       display: block;
@@ -97,6 +105,36 @@
       height: 25px;
       border-bottom: 2px rgba(40, 54, 69, 0.3) solid;
       border-left: 2px rgba(40, 54, 69, 0.3) solid;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 25%;
+      right: 100%;
+    }
+  }
+
+  &:hover::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-bottom: 2px rgba(40, 54, 69, 0.6) solid;
+      border-left: 2px rgba(40, 54, 69, 0.6) solid;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 25%;
+      right: 100%;
+    }
+  }
+
+  &:active::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-bottom: 2px rgba(40, 54, 69, 0.1) solid;
+      border-left: 2px rgba(40, 54, 69, 0.1) solid;
       transform: rotate(45deg);
       position: absolute;
       top: 25%;
@@ -112,6 +150,36 @@
       height: 25px;
       border-bottom: 2px rgba(40, 54, 69, 0.3) solid;
       border-right: 2px rgba(40, 54, 69, 0.3) solid;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 25%;
+      left: 100%;
+    }
+  }
+
+  &:hover::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-bottom: 2px rgba(40, 54, 69, 0.6) solid;
+      border-right: 2px rgba(40, 54, 69, 0.6) solid;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 25%;
+      left: 100%;
+    }
+  }
+
+  &:active::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 25px;
+      border-bottom: 2px rgba(40, 54, 69, 0.1) solid;
+      border-right: 2px rgba(40, 54, 69, 0.1) solid;
       transform: rotate(-45deg);
       position: absolute;
       top: 25%;

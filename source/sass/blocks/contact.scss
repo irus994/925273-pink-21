@@ -1,10 +1,16 @@
 
 .contact {
   text-align: center;
-  padding-top: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 74px;
+  padding: 40px 20px 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 65px;
+    padding-bottom: 15px;
+  }
 }
 
 .contact__header {
@@ -15,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,11 +33,17 @@
   font-size: 18px;
   font-weight: bold;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-left: 25px;
+  }
 }
 
 .contact__link {
-  color: #D22856;
+  color: #d22856;
   text-decoration: none;
+  display: block;
 
   &:hover {
     color: #283645;
@@ -39,35 +52,46 @@
 
   &:active {
     color: rgba(40, 54, 69, 0.3);
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 40px;
-    padding-right: 40px;
   }
 }
 
 .contact__tel {
   font-size: 24px;
+  font-weight: 200;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .contact__mail {
   font-size: 24px;
+  font-weight: 200;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .contact__address {
   font-size: 24px;
-  color: #D22856;
+  font-weight: 200;
+  color: #d22856;
   margin: 0;
 
-  &:hover {
-    color: #283645;
-    text-decoration: underline;
-  }
-
-  &:active {
-    color: rgba(40, 54, 69, 0.3);
+  @media (min-width: $desktop-width) {
+    padding: 20px 48px 0 48px;
   }
 }

@@ -5,6 +5,16 @@
   text-align: center;
   margin-bottom: 0;
   margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+    padding-bottom: 60px;
+  }
 }
 
 .tagline__text {
@@ -16,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {

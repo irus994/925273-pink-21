@@ -14,33 +14,54 @@
 }
 
 .form__asterisk {
-  margin-top: 46px;
+  margin-top: 36px;
+  margin-bottom: 20px;
   display: block;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
 }
 
 .form__asterisk-sign {
-  color: #D22856;
+  color: #d22856;
 }
 
 .form__asterisk-text {
   font-size: 14px;
   color: #283645;
+
+  &--optional {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
 }
 
 .form__button {
-  height: 59px;
-  width: 276px;
+  height: 65px;
+  width: 278px;
   font-size: 18px;
   line-height: 18px;
-  background-color: #2AAB6D;
+  background-color: #2aab6d;
   border: none;
   color: #ffffff;
   text-transform: uppercase;
   padding: 23px 45px;
   border-radius: 2px;
 
+  &--wider {
+    @media (min-width: $desktop-width) {
+      min-width: 456px;
+    }
+  }
+
   &:hover {
-    background-color: #1C9B5E;
+    background-color: #1c9b5e;
   }
 
   &:active {
@@ -49,7 +70,10 @@
 
   &:disabled {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 
- }
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+}

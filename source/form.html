@@ -6,12 +6,14 @@
     <title>Форма отправки</title>
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<!--    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">-->
   </head>
-  <body class="page__body">
-    <header class="page-header">
+  <body class="page-body">
+  <!--  Класс page-header--open добавляется к элементу page-header при раскрывании мобильного меню, -->
+  <!--  для удаления прозрачности с данного блока (в соответсвии с макетом) Включен по умолчанию -->
+  <!--  для работы мобильного меню без JS, а также при открытии мобильного меню классом main-nav--open-->
+  <header class="page-header page-header--open">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html" alt="Логотип компании PINK">
+      <a class="page-header__logo logo" href="/index.html">
         <svg class="logo__header-desktop" width="147" height="40">
           <use xlink:href="/icons/sprite.svg#logotype-white-desktop"></use>
         </svg>
@@ -22,12 +24,15 @@
           <use xlink:href="/icons/sprite.svg#pink"></use>
         </svg>
       </a>
-      <nav class="main-nav main-nav--close">
+      <!--Класс js-none используется по умолчанию для работы мобильного меню без JS.-->
+      <!--  При наличии работающего JS js-none удаляется из <nav>-->
+      <!-- Мобильное меню (при условии работающего JS) открывается удалением класса main-nav--close, закрывается удалением этого класса-->
+      <nav class="main-nav js-none">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
@@ -40,8 +45,8 @@
     </section>
     <main class="main">
       <section class="preview-text">
-          <p class="preview-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <p class="preview-text__text preview-text__text--additionally" >Пожалуйста, заполните форму ниже</p>
+          <p class="preview-text__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="preview-text__text preview-text__text--additionally">Пожалуйста, заполните форму ниже</span></p>
       </section>
       <div class="wrapper__form">
         <form class="form" action="https://echo.htmlacademy.ru" method="POST">
@@ -63,29 +68,29 @@
               </ul>
             </div>
             <div class="achievements-form">
-                  <p class="achievements-form__header">Ваши безбашенные приключения</p>
+                  <p class="achievements-form__header">Ваши безбашенные достижения в путешествии</p>
                   <ul class="achievements-form__list">
-                    <li class="achievements-form__item">
+                    <li class="achievements-form__item achievements-form__item--shark">
                       <input class="achievements-form__input" type="checkbox" checked name="selfie-shark" id="selfie">
                       <label class="achievements-form__label" for="selfie">Сделал селфи с акулой</label>
                     </li>
-                    <li class="achievements-form__item">
+                    <li class="achievements-form__item achievements-form__item--beach">
                       <input class="achievements-form__input" type="checkbox" checked name="burned-beach" id="beach">
                       <label class="achievements-form__label" for="beach">Обгорел на пляже</label>
                     </li>
-                    <li class="achievements-form__item">
+                    <li class="achievements-form__item achievements-form__item--chuck">
                       <input class="achievements-form__input" type="checkbox" name="saw-сhuck-norris" id="сhuck-norris">
                       <label class="achievements-form__label" for="сhuck-norris">Видел Чака Норриса</label>
                     </li>
-                    <li class="achievements-form__item">
+                    <li class="achievements-form__item achievements-form__item--souvenirs">
                       <input class="achievements-form__input" type="checkbox" name="buy-souvenirs" id="souvenirs">
                       <label class="achievements-form__label" for="souvenirs">Накупил сувениров</label>
                     </li>
-                    <li class="achievements-form__item">
+                    <li class="achievements-form__item achievements-form__item--tower">
                       <input class="achievements-form__input" type="checkbox" name="keep-tower" id="tower">
                       <label class="achievements-form__label" for="tower">Удержал башню</label>
                     </li>
-                    <li class="achievements-form__item">
+                    <li class="achievements-form__item achievements-form__item--hotel">
                       <input class="achievements-form__input" type="checkbox" checked name="smash-hotel" id="hotel">
                       <label class="achievements-form__label" for="hotel">Разгромил отель</label>
                     </li>
@@ -105,7 +110,7 @@
                   </ul>
                 </div>
             <div class="attachment-form">
-                  <p class="attachment-form__header">C каким приложением путешествовали</p>
+                  <p class="attachment-form__header">C каким приложением путешествовали?</p>
                   <ul class="attachment-form__list">
                     <li class="attachment-form__item">
                       <input class="attachment-form__input" type="radio" name="attachment" checked value="pink-ios" id="pink-ios">
@@ -129,35 +134,36 @@
           <div class="wrapper__form-button">
             <button class="form__button" type="submit">Отправить форму</button>
             <p class="form__asterisk">
-              <span class="form__asterisk-sign">*</span> <span class="form__asterisk-text">— Обязательные поля</span>
+              <span class="form__asterisk-sign">*</span> <span class="form__asterisk-text">— Обязательные <span class="form__asterisk-text form__asterisk-text--optional"> для заполнения</span> поля </span>
             </p>
           </div>
       </form>
       </div>
     </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo">
-        <!--        <picture>-->
-        <!--          <source srcset="img/logotype-blue-desktop.svg" media="(min-width: 960px)">-->
-        <!--          <img src="img/logotype-blue-tablet.svg" alt="Логотип приложения PINK">-->
-        <!--        </picture>-->
-        <svg class="logo__footer-desktop" width="147" height="40">
-          <use xlink:href="/icons/sprite.svg#logotype-blue-desktop"></use>
-        </svg>
-        <svg class="logo__footer-tablet" width="145" height="40">
-          <use xlink:href="/icons/sprite.svg#logotype-blue-tablet"></use>
+  <footer class="page-footer">
+    <a class="page-footer__logo logo">
+      <svg class="logo__footer-desktop" width="147" height="40">
+        <use xlink:href="/icons/sprite.svg#logotype-blue-desktop"></use>
+      </svg>
+      <svg class="logo__footer-tablet" width="145" height="40">
+        <use xlink:href="/icons/sprite.svg#logotype-blue-tablet"></use>
+      </svg>
+    </a>
+    <ul class="social-button">
+      <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+      <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+      <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
+    </ul>
+    <div class="wrapper__developed">
+      <span class="developed">Разработано</span>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Разработано HTML Academy">
+        <svg class="developed__image" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
         </svg>
       </a>
-      <ul class="social-button">
-        <li class="social-button__item"><a class="social-button__link social-button__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
-        <li class="social-button__item"><a class="social-button__link social-button__link--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
-        <li class="social-button__item"><a class="social-button__link social-button__link--youtube" href="#"><span class="visually-hidden">YouTube</span></a></li>
-      </ul>
-      <div class="wrapper__developed">
-        <span class="developed">Разработано</span>
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="developed__image" src="img/html%20academy.svg" alt="Разработано HTML Academy"></a>
-      </div>
-    </footer>
+    </div>
+  </footer>
+<!--  Формы открываются удалением класса pop-up&#45;&#45;close, а закрываются добавлением класса pop-up&#45;&#45;close-->
     <div class="pop-up pop-up--failure pop-up--close">
       <p class="pop-up__header">Что-то пошло
         не так!</p>
@@ -176,7 +182,7 @@
         ближайшее время мы рассмотрим
         ее и оповестим вас.</p>
       <div class="wrapper__por-up-button wrapper__por-up-button--success">
-        <button class="form__button">Закрыть окно</button>
+        <button class="form__button form__button--wider">Закрыть окно</button>
       </div>
     </div>
   </body>

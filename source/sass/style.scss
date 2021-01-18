@@ -2,7 +2,7 @@
 @import "vars";
 @import "fonts";
 @import "visually-hidden";
-@import "blocks/page";
+@import "blocks/page-body";
 @import "blocks/page-header";
 @import "blocks/advantages";
 @import "blocks/developed";
@@ -36,4 +36,5 @@
 @import "blocks/end-text";
 @import "blocks/pop-up";
 @import "blocks/logo";
-@import "blocks/background-angle";
+@import "blocks/preview-catalog-text";
+@import "blocks/end-catalog-text";

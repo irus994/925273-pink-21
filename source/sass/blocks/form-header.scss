@@ -1,25 +1,21 @@
-
-.form-header {
-
-}
-
 .form-header__header {
   padding-left: 46px;
   padding-right: 46px;
-  padding-top: 102px;
+  padding-top: 95px;
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
   margin: auto;
-  max-width: 350px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 175px;
     font-size: 50px;
     min-width: 620px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1000px;
   }
 }

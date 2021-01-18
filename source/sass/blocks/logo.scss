@@ -1,10 +1,27 @@
 
+.logo:hover .logo__header-mobile {
+  fill: #d22856;
+}
+
+.logo:active .logo__header-mobile {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .logo__header-mobile {
   display: block;
+  fill: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.logo:hover .logo__header-tablet {
+  fill: #d22856;
+}
+
+.logo:active .logo__header-tablet {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .logo__header-tablet {
@@ -12,11 +29,20 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    fill: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.logo:hover .logo__header-desktop {
+  fill: #d22856;
+}
+
+.logo:active .logo__header-desktop {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .logo__header-desktop {
@@ -24,19 +50,34 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    fill: #ffffff;
   }
+}
+
+.logo:hover .logo__footer-tablet {
+  fill: #d22856;
+}
+
+.logo:active .logo__footer-tablet {
+  opacity: 0.3;
 }
 
 .logo__footer-tablet {
   display: block;
-
-  &:active {
-    opacity: 0.3;
-  }
+  padding-bottom: 8px;
+  fill: #283645;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.logo:hover .logo__footer-desktop {
+  fill: #d22856;
+}
+
+.logo:active .logo__footer-desktop {
+  opacity: 0.3;
 }
 
 .logo__footer-desktop {
@@ -44,9 +85,6 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-
-    &:active {
-      opacity: 0.3;
-    }
+    fill: #283645;
   }
 }

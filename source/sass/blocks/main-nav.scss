@@ -1,6 +1,7 @@
 
 .main-nav {
   position: relative;
+
   @media (min-width: $desktop-width) {
     display: flex;
   }
@@ -37,6 +38,10 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.js-none .main-nav__toggle {
+  display: none;
 }
 
 .main-nav--close .main-nav__toggle {
@@ -83,25 +88,36 @@
   }
 }
 
+
 .main-nav__item {
   display: block;
-  height: 63px;
+  height: 64px;
   border-bottom: 1px #000000 solid;
+  border-top: 1px rgba(255, 255, 255, 0.1) solid;
   text-align: center;
   background-color: #1d2631;
   box-sizing: border-box;
 
   &:first-child {
-    border-top: 1px #000000 solid;
+    border-top: 1px rgba(255, 255, 255, 0.1) solid;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
 
     @media (min-width: $desktop-width) {
       border-top: none;
+      box-shadow: none;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     background-color: transparent;
+    margin-right: 75px;
 
     &--active {
       border-bottom: 2px #ffffff solid;
@@ -111,35 +127,37 @@
 }
 
 .main-nav__item--active .main-nav__link:hover {
-    color: #ffffff;
+  color: #ffffff;
+}
+
+
+.main-nav__link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 63px;
+  font-size: 18px;
+  font-weight: 400;
+
+  &:hover {
+    color: #d22856;
   }
 
+  &:active {
+    color: #d22856;
+    opacity: 0.3;
+  }
 
-  .main-nav__link {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 63px;
+  @media (min-width: $desktop-width) {
+    text-transform: none;
+    font-size: 18px;
 
     &:hover {
       color: #d22856;
     }
 
     &:active {
-      color: #d22856;
-      opacity: 0.3;
-    }
-
-    @media (min-width: $desktop-width) {
-      text-transform: none;
-      font-size: 18px;
-
-      &:hover {
-        color: #D22856;
-      }
-
-      &:active {
-        color: rgba(255, 255, 255, 0.3);
-      }
+      color: rgba(255, 255, 255, 0.3);
     }
   }
+}
