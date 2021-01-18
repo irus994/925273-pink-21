@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -70px;
+    margin-top: -98px;
     height: 502px;
   }
 }
@@ -40,6 +40,10 @@
 
   @media (min-width: $tablet-width) {
     height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100px;
   }
 
 

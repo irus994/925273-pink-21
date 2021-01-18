@@ -17,7 +17,7 @@
 }
 
 .attachment-form__header {
-  color: #D22856;
+  color: #d22856;
   text-align: center;
   text-transform: uppercase;
   padding-top: 42px;
@@ -33,7 +33,6 @@
     margin-right: auto;
     width: max-content;
     position: relative;
-
   }
 }
 
@@ -42,12 +41,12 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    border: 2px #E5E5E5 solid;
-    padding: 61px 74px 66px 74px;
+    border: 2px #e5e5e5 solid;
+    padding: 30px 74px 35px 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 46px 74px 51px 74px;
+    padding: 32px 74px 51px 74px;
     margin-bottom: 0;
     box-sizing: border-box;
     height: 297px;
@@ -55,8 +54,13 @@
 }
 
 .attachment-form__item {
-  padding-top: 15px;
+  padding-top: 19px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 .attachment-form__input {
@@ -64,20 +68,20 @@
   z-index: -1;
   opacity: 0;
 
-  &+label {
+  & + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
   }
 
-  &+label::before {
-    content: '';
+  & + label::before {
+    content: "";
     display: inline-block;
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -87,11 +91,11 @@
     background-color: #ffffff;
   }
 
-  &+label:hover::before {
-    content: '';
+  & + label:hover::before {
+    content: "";
     display: inline-block;
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 2px solid #283645;
@@ -104,11 +108,11 @@
     background-color: #ffffff;
   }
 
-  &+label:active::before {
-    content: '';
+  & + label:active::before {
+    content: "";
     display: inline-block;
-    width: 37px;
-    height: 37px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
     flex-grow: 0;
     border: 2px solid #d22856;
@@ -121,17 +125,17 @@
     background-color: #ffffff;
   }
 
-  &:checked+label::before {
-    border-color: #E5E5E5;
+  &:checked + label::before {
+    border-color: #e5e5e5;
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' fill='%23D22856'/%3E%3C/svg%3E");
   }
 
-  &:checked+label:hover::before {
+  &:checked + label:hover::before {
     border-color: #283645;
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' fill='%23D22856'/%3E%3C/svg%3E");
   }
 
-  &:checked+label:active::before {
+  &:checked + label:active::before {
     border-color: #d22856;
     background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='7.5' fill='%23D22856'/%3E%3C/svg%3E");
   }

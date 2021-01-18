@@ -5,6 +5,10 @@
   margin: auto;
   padding-left: 10px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .dots__items {

@@ -15,7 +15,7 @@
     left: 13px;
 
     @media (min-width: $tablet-width) and (max-width: 959px) {
-      top: 0px;
+      top: 0;
       left: 7px;
     }
   }
@@ -32,4 +32,3 @@
     top: -11px;
   }
 }
-

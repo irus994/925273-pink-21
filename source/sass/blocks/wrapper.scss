@@ -87,18 +87,44 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
 }
 
 .wrapper__tel {
   padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .wrapper__mail {
-  padding-top: 28px;
+  padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
 }
 
 .wrapper__address {
   padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
 }
 
 .wrapper__form {
@@ -109,6 +135,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 22px;
     padding-right: 22px;
+    padding-bottom: 40px;
     margin: auto;
   }
 
@@ -118,7 +145,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 936px;
-    margin-top: 75px;
+    margin-top: 60px;
+    padding-bottom: 0;
   }
 }
 
@@ -167,16 +195,16 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  padding-top: 42px;
+  padding-top: 46px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 69px;
-    padding: 0;
+    margin-top: 0;
   }
 }
 
@@ -189,12 +217,13 @@
   width: 100%;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  padding: 25px 20px;
+  padding: 15px 18px 19px 18px;
+  height: max-content;
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    height: 155px;
-    padding: 25px 30px;
+    height: 150px;
+    padding: 17px 30px;
   }
 }
 
@@ -202,7 +231,11 @@
   width: 100%;
   box-sizing: border-box;
   background-color: #f2f2f2;
-  padding: 25px 20px;
+  padding: 15px 5px 17px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 19px 31px 25px 31px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: auto;
@@ -222,7 +255,6 @@
 }
 
 .wrapper__like-column {
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -246,13 +278,14 @@
     box-sizing: border-box;
 
     @media (min-width: $desktop-width) {
-      background-color: #F2F2F2;
+      background-color: #f2f2f2;
       padding: 52px 242px;
     }
   }
 
   &--success {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
+    padding: 45px 22px 50px 22px;
 
     @media (min-width: $tablet-width) {
       width: 100%;
@@ -261,4 +294,3 @@
     }
   }
 }
-
