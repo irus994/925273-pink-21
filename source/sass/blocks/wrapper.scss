@@ -267,6 +267,28 @@
   }
 }
 
+
+.wrapper__catalog-form-button {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px rgba(16%, 21%, 27%, 0.1) solid;
+  padding-top: 31px;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 140px 0 0 90px;
+  }
+}
+
 .wrapper__por-up-button {
   width: 100%;
   padding: 52px 22px;
