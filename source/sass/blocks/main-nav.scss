@@ -105,6 +105,8 @@
     @media (min-width: $desktop-width) {
       border-top: none;
       box-shadow: none;
+      margin-right: 70px;
+      margin-left: 10px;
     }
   }
 
@@ -118,10 +120,11 @@
     border: none;
     background-color: transparent;
     margin-right: 75px;
+    height: 52px;
+    margin-bottom: 10px;
 
     &--active {
       border-bottom: 2px #ffffff solid;
-      padding-bottom: 19px;
     }
   }
 }

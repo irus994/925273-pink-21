@@ -39,6 +39,10 @@
     box-sizing: border-box;
     padding: 27px 20px 43px 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 20px 43px 10px;
+  }
 }
 
 .page-header__wrapper {
