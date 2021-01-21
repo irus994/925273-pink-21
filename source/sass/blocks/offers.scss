@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 73px;
-    padding-top: 63px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,12 +37,12 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: 959px) {
-    height: 75px;
+    height: 78px;
   }
 }
 
 .offers__table-td {
-  border: 2px #e5e5e5 solid;
+  border: 1px #e5e5e5 solid;
   min-width: 276px;
   height: 59px;
   margin: 0;
@@ -51,8 +51,8 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    min-width: 152px;
-    height: 45px;
+    min-width: 154px;
+    height: 47px;
   }
 
   @media (min-width: $desktop-width) {

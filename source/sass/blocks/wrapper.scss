@@ -54,6 +54,20 @@
   }
 }
 
+.wrapper__download-button {
+  background-color: #1d2631;
+  padding: 28px 20px 30px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    padding: 28px 30px 34px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding: 35px 30px 55px 0;
+  }
+}
 
 .wrapper__column-left {
   @media (min-width: $tablet-width) {
@@ -86,10 +100,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
@@ -135,7 +150,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 22px;
     padding-right: 22px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     margin: auto;
   }
 
