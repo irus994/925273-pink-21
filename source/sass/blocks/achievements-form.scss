@@ -57,7 +57,7 @@
 
   @media (min-width: $tablet-width) {
     border: 2px #e5e5e5 solid;
-    padding: 25px 60px 30px 60px;
+    padding: 25px 60px 30px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +65,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 936px;
-    padding: 30px 0 30px 60px;
+    padding: 26px 0 36px 58px;
     margin: 0;
     box-sizing: border-box;
   }
@@ -77,12 +77,13 @@
   padding: 20px 0 23px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 0 18px 0;
+    padding: 27px 0 16px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 260px;
     margin-right: 35px;
+    padding: 26px 3px 16px 0;
   }
 
   &--shark {

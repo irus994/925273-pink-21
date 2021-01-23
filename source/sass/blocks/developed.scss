@@ -1,5 +1,19 @@
 
 .developed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+}
+
+.developed__text {
   font-size: 14px;
   line-height: 18px;
 

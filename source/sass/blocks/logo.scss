@@ -1,4 +1,29 @@
 
+.logo {
+  height: 32px;
+  width: 74px;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 145px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 40px;
+    width: 147px;
+  }
+
+  &--footer {
+    height: 40px;
+    width: 145px;
+
+    @media (min-width: $desktop-width) {
+      height: 40px;
+      width: 147px;
+    }
+  }
+}
+
 .logo:hover .logo__header-mobile {
   fill: #d22856;
 }
@@ -51,6 +76,8 @@
   @media (min-width: $desktop-width) {
     display: block;
     fill: #ffffff;
+    width: 147px;
+    height: 40px;
   }
 }
 
@@ -64,7 +91,6 @@
 
 .logo__footer-tablet {
   display: block;
-  padding-bottom: 8px;
   fill: #283645;
 
   @media (min-width: $desktop-width) {

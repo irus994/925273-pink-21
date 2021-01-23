@@ -13,6 +13,7 @@
     background: url("../../img/background-tablet.jpg") no-repeat;
     background-size: cover;
     background-position: center;
+    background-color: #1d2631;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/background-tablet@2x.jpg") no-repeat;
@@ -27,6 +28,7 @@
     background-position: center;
     height: 853px;
     width: 100%;
+    background-color: #1d2631;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/back-desktop@2x.jpg") no-repeat;
@@ -78,20 +80,6 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 130px;
-  }
-}
-
-.wrapper__developed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 4;
   }
 }
 
@@ -218,7 +206,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 50px;
   }
 }
 
@@ -254,6 +242,7 @@
   @media (min-width: $desktop-width) {
     margin: auto;
     width: 940px;
+    padding-top: 23px;
   }
 }
 
